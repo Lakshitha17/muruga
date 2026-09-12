@@ -1,7 +1,7 @@
 // 1.sum of two numbers
-// let num1 = 10
-// let num2 = 20
-// console.log(num1 + num2)
+let num1 = 10
+let num2 = 20
+console.log(num1 + num2)
 
 
 //2.mul of two numbers
