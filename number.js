@@ -95,43 +95,43 @@
 // }
 
 // 9.Armstrong
-let num = 153;
-let sum=0,rem,temp;
-temp=num;
-while(num>0)
-{
-    rem = num%10;
-    sum = sum+rem*rem*rem;
-    num = parseInt(num/10)
-}
-if(temp==sum)
-{
-    console.log("Armstromg number")
-}
-else
-{
-    console.log("not Armstrong number")
-}
+// let num = 153;
+// let sum=0,rem,temp;
+// temp=num;
+// while(num>0)
+// {
+//     rem = num%10;
+//     sum = sum+rem*rem*rem;
+//     num = parseInt(num/10)
+// }
+// if(temp==sum)
+// {
+//     console.log("Armstromg number")
+// }
+// else
+// {
+//     console.log("not Armstrong number")
+// }
 
 // 10.sum of digits
-// let n = 123;
-// let sum = 0;
-// while(n>0)
-// {
-//     let digit = n%10;
-//     sum = sum+digit;
-//     n = parseInt(n/10);
-// }
-// console.log(sum)
+let n = 123;
+let sum = 0;
+while(n>0)
+{
+    let digit = n%10;
+    sum = sum+digit;
+    n = parseInt(n/10);
+}
+console.log(sum)
 
 // 11.pattern printng*
-let num=5;
-for(let i=0;i<=num;i++)
-{
-    pattern ''
-    for(let j=1;j<=i+1;j++)
-    {
-        pattern = pattern+'*';
-    }
-    console.Log(pattern)
-}
+// let num=5;
+// for(let i=0;i<=num;i++)
+// {
+//     pattern ''
+//     for(let j=1;j<=i+1;j++)
+//     {
+//         pattern = pattern+'*';
+//     }
+//     console.Log(pattern)
+// }
