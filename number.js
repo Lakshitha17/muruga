@@ -76,42 +76,42 @@
 // }
 
 //8.palindrome
-let num = 121;
-let rev,rem=0,temp
-temp=num;
-while(num>0)
-{
-    rem = num%10;
-    rev = (rev*10)+rem;
-    num = parseInt(num/10);
-}
-if(temp==rev)
-{
-    console.log("palindrome")
-}
-else
-{
-    console.log("not a palindrome")
-}
-
-// 9.Armstrong
-// let num = 153;
-// let sum=0,rem,temp;
+// let num = 121;
+// let rev,rem=0,temp
 // temp=num;
 // while(num>0)
 // {
 //     rem = num%10;
-//     sum = sum+rem*rem*rem;
-//     num = parseInt(num/10)
+//     rev = (rev*10)+rem;
+//     num = parseInt(num/10);
 // }
-// if(temp==sum)
+// if(temp==rev)
 // {
-//     console.log("Armstromg number")
+//     console.log("palindrome")
 // }
 // else
 // {
-//     console.log("not Armstrong number")
+//     console.log("not a palindrome")
 // }
+
+// 9.Armstrong
+let num = 153;
+let sum=0,rem,temp;
+temp=num;
+while(num>0)
+{
+    rem = num%10;
+    sum = sum+rem*rem*rem;
+    num = parseInt(num/10)
+}
+if(temp==sum)
+{
+    console.log("Armstromg number")
+}
+else
+{
+    console.log("not Armstrong number")
+}
 
 // 10.sum of digits
 // let n = 123;
