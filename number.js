@@ -25,55 +25,55 @@
 // }
 
 //4.vowel and consonant
-let ch = 'a';
-if((ch=='k')||(ch=='a')||(ch=='j'))
-{
-    console.log("vowel")
-}
-else{
-    console.log("not a vowel");
-}
+// let ch = 'a';
+// if((ch=='k')||(ch=='a')||(ch=='j'))
+// {
+//     console.log("vowel")
+// }
+// else{
+//     console.log("not a vowel");
+// }
 
-5.Even number
-let num1 = 20;
-if(num1%2==0)
-{
-    console.log("Even number")
-}
-else{
-    console.log("not even number")
-}
+// 5.Even number
+// let num1 = 20;
+// if(num1%2==0)
+// {
+//     console.log("Even number")
+// }
+// else{
+//     console.log("not even number")
+// }
 
 // 6. positive or negative 
-// let num = 12;
-//     if(num>0)
-//     {
-//         console.log("Positive number")
-//     }
-//     else{
-//         console.log("negative number")
-//     }
+let num = 12;
+    if(num>0)
+    {
+        console.log("Positive number")
+    }
+    else{
+        console.log("negative number")
+    }
 
-// 7. prime or not
-// let num = 12;
-// let count = 0;
+7. prime or not
+let num = 12;
+let count = 0;
 
-// for(let i = 1; i <= num; i++)
-// {
-//     if(num % i == 0)
-//     {
-//         count++;
-//     }
-// }
+for(let i = 1; i <= num; i++)
+{
+    if(num % i == 0)
+    {
+        count++;
+    }
+}
 
-// if(count == 2)
-// {
-//     console.log("Prime number");
-// }
-// else
-// {
-//     console.log("Not a prime number");
-// }
+if(count == 2)
+{
+    console.log("Prime number");
+}
+else
+{
+    console.log("Not a prime number");
+}
 
 //8.palindrome
 // let num = 121;
