@@ -10,39 +10,39 @@
 // console.log(num1*num2);
 
 //3.greatest of three numbers
-let num;
-let a,b,c
-if(a>b)
-{
-    console.log("a is big")
-}
-else if(b>c)
-{
-    console.log("b is big")
-}
-else{
-    console.log("c is big")
-}
+// let num;
+// let a,b,c
+// if(a>b)
+// {
+//     console.log("a is big")
+// }
+// else if(b>c)
+// {
+//     console.log("b is big")
+// }
+// else{
+//     console.log("c is big")
+// }
 
 //4.vowel and consonant
-// let ch = 'a';
-// if((ch=='k')||(ch=='a')||(ch=='j'))
-// {
-//     console.log("vowel")
-// }
-// else{
-//     console.log("not a vowel");
-// }
+let ch = 'a';
+if((ch=='k')||(ch=='a')||(ch=='j'))
+{
+    console.log("vowel")
+}
+else{
+    console.log("not a vowel");
+}
 
-//5.Even number
-// let num1 = 20;
-// if(num1%2==0)
-// {
-//     console.log("Even number")
-// }
-// else{
-//     console.log("not even number")
-// }
+5.Even number
+let num1 = 20;
+if(num1%2==0)
+{
+    console.log("Even number")
+}
+else{
+    console.log("not even number")
+}
 
 // 6. positive or negative 
 // let num = 12;
