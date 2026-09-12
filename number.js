@@ -45,54 +45,54 @@
 // }
 
 // 6. positive or negative 
-let num = 12;
-    if(num>0)
-    {
-        console.log("Positive number")
-    }
-    else{
-        console.log("negative number")
-    }
+// let num = 12;
+//     if(num>0)
+//     {
+//         console.log("Positive number")
+//     }
+//     else{
+//         console.log("negative number")
+//     }
 
-7. prime or not
-let num = 12;
-let count = 0;
+// 7. prime or not
+// let num = 12;
+// let count = 0;
 
-for(let i = 1; i <= num; i++)
-{
-    if(num % i == 0)
-    {
-        count++;
-    }
-}
-
-if(count == 2)
-{
-    console.log("Prime number");
-}
-else
-{
-    console.log("Not a prime number");
-}
-
-//8.palindrome
-// let num = 121;
-// let rev,rem=0,temp
-// temp=num;
-// while(num>0)
+// for(let i = 1; i <= num; i++)
 // {
-//     rem = num%10;
-//     rev = (rev*10)+rem;
-//     num = parseInt(num/10);
+//     if(num % i == 0)
+//     {
+//         count++;
+//     }
 // }
-// if(temp==rev)
+
+// if(count == 2)
 // {
-//     console.log("palindrome")
+//     console.log("Prime number");
 // }
 // else
 // {
-//     console.log("not a palindrome")
+//     console.log("Not a prime number");
 // }
+
+//8.palindrome
+let num = 121;
+let rev,rem=0,temp
+temp=num;
+while(num>0)
+{
+    rem = num%10;
+    rev = (rev*10)+rem;
+    num = parseInt(num/10);
+}
+if(temp==rev)
+{
+    console.log("palindrome")
+}
+else
+{
+    console.log("not a palindrome")
+}
 
 // 9.Armstrong
 // let num = 153;
