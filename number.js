@@ -125,13 +125,22 @@
 // console.log(sum)
 
 // 11.pattern printng*
-let num=5;
-for(let i=0;i<=num;i++)
+// let num=5;
+// for(let i=0;i<=num;i++)
+// {
+//     pattern ''
+//     for(let j=1;j<=i+1;j++)
+//     {
+//         pattern = pattern+'*';
+//     }
+//     console.Log(pattern)
+// }
+
+//12.factorial
+let num;
+let factorial = 1;
+for( num=5;num>1;num--)
 {
-    pattern ''
-    for(let j=1;j<=i+1;j++)
-    {
-        pattern = pattern+'*';
-    }
-    console.Log(pattern)
+  factorial=factorial*num;
 }
+console.log(factorial)
