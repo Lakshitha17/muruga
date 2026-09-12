@@ -5,24 +5,24 @@
 
 
 //2.mul of two numbers
-let num1 = 20;
-let num2 = 30;
-console.log(num1*num2);
+// let num1 = 20;
+// let num2 = 30;
+// console.log(num1*num2);
 
 //3.greatest of three numbers
-// let num;
-// let a,b,c
-// if(a>b)
-// {
-//     console.log("a is big")
-// }
-// else if(b>c)
-// {
-//     console.log("b is big")
-// }
-// else{
-//     console.log("c is big")
-// }
+let num;
+let a,b,c
+if(a>b)
+{
+    console.log("a is big")
+}
+else if(b>c)
+{
+    console.log("b is big")
+}
+else{
+    console.log("c is big")
+}
 
 //4.vowel and consonant
 // let ch = 'a';
