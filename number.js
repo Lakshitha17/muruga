@@ -114,24 +114,24 @@
 // }
 
 // 10.sum of digits
-let n = 123;
-let sum = 0;
-while(n>0)
-{
-    let digit = n%10;
-    sum = sum+digit;
-    n = parseInt(n/10);
-}
-console.log(sum)
+// let n = 123;
+// let sum = 0;
+// while(n>0)
+// {
+//     let digit = n%10;
+//     sum = sum+digit;
+//     n = parseInt(n/10);
+// }
+// console.log(sum)
 
 // 11.pattern printng*
-// let num=5;
-// for(let i=0;i<=num;i++)
-// {
-//     pattern ''
-//     for(let j=1;j<=i+1;j++)
-//     {
-//         pattern = pattern+'*';
-//     }
-//     console.Log(pattern)
-// }
+let num=5;
+for(let i=0;i<=num;i++)
+{
+    pattern ''
+    for(let j=1;j<=i+1;j++)
+    {
+        pattern = pattern+'*';
+    }
+    console.Log(pattern)
+}
