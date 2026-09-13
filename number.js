@@ -124,7 +124,7 @@
 // }
 // console.log(sum)
 
-// 11.pattern printng*
+// 11.pattern printng
 // let num=5;
 // for(let i=0;i<=num;i++)
 // {
@@ -152,26 +152,36 @@
 //   console.log(num*i)
 // }
 
-// //sum of first N numbers
+// 14.sum of first N numbers
 // let num = 0;
-
 // for(let i = 1; i <= 100; i++)
 // {
 //     num = num + i;
 // }
 // console.log(num);
 
-//add of 2 number
+//15.add of 2 number
 // let a =20;
 // let b=100;
 // console.log(a+b)
 
-//swap of two numbers
-let num1=20;
-let num2=30;
-let num3;
- num3=num1
-num1=num2
-num2=num3
-console.log(num1)
-console.log(num2)
+//16.swap of two numbers
+// let num1=20;
+// let num2=30;
+// let num3;
+//  num3=num1
+// num1=num2
+// num2=num3
+// console.log(num1)
+// console.log(num2)
+
+//17.find the sum of digits
+let num=1234;
+let sum=0;
+while(num>0)
+{
+  let digit=num%10;
+  sum = sum+digit;
+  num=parseInt(num/10);
+}
+console.log(num);
