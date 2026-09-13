@@ -146,17 +146,22 @@
 // console.log(factorial)
 
 // 13.multiplication table
-let nuu=2;
-for(i=1;i<=10;i++)
-{
-  console.log(num*i)
-}
+// let nuu=2;
+// for(i=1;i<=10;i++)
+// {
+//   console.log(num*i)
+// }
 
-//sum of first N numbers
-let num = 0;
+// //sum of first N numbers
+// let num = 0;
 
-for(let i = 1; i <= 100; i++)
-{
-    num = num + i;
-}
-console.log(num);
+// for(let i = 1; i <= 100; i++)
+// {
+//     num = num + i;
+// }
+// console.log(num);
+
+//add of 2 number
+let a =20;
+let b=100;
+console.log(a+b)
