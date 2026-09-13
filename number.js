@@ -162,6 +162,16 @@
 // console.log(num);
 
 //add of 2 number
-let a =20;
-let b=100;
-console.log(a+b)
+// let a =20;
+// let b=100;
+// console.log(a+b)
+
+//swap of two numbers
+let num1=20;
+let num2=30;
+let num3;
+ num3=num1
+num1=num2
+num2=num3
+console.log(num1)
+console.log(num2)
