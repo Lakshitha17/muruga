@@ -137,10 +137,17 @@
 // }
 
 //12.factorial
-let num;
-let factorial = 1;
-for( num=5;num>1;num--)
+// let num;
+// let factorial = 1;
+// for( num=5;num>1;num--)
+// {
+//   factorial=factorial*num;
+// }
+// console.log(factorial)
+
+// 13.multiplication table
+let nuu=2;
+for(i=1;i<=10;i++)
 {
-  factorial=factorial*num;
+  console.log(num*i)
 }
-console.log(factorial)
