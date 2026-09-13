@@ -151,3 +151,12 @@ for(i=1;i<=10;i++)
 {
   console.log(num*i)
 }
+
+//sum of first N numbers
+let num = 0;
+
+for(let i = 1; i <= 100; i++)
+{
+    num = num + i;
+}
+console.log(num);
