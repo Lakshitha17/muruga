@@ -198,16 +198,30 @@
 // console.log("GCD =", a);
 
 //19.lcm
-let a = 12;
-let b = 18;
+// let a = 12;
+// let b = 18;
 
-let x = a;
-let y = b;
+// let x = a;
+// let y = b;
 
-while (y !== 0) {
-    let temp = y;
-    y = x % y;
-    x = temp;
+// while (y !== 0) {
+//     let temp = y;
+//     y = x % y;
+//     x = temp;
+// }
+
+// console.log("GCD =", x);
+
+//20.smallest digit
+let n = 58321;
+let smallest = 9;
+
+while (n > 0) {
+    let digit = n % 10;
+
+    if (digit < smallest) {
+        smallest = digit;
+    }
+    n = Math.floor(n / 10);
 }
-
-console.log("GCD =", x);
+console.log("Smallest digit =", smallest);
