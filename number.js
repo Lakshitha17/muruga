@@ -176,12 +176,23 @@
 // console.log(num2)
 
 //17.find the sum of digits
-let num=1234;
-let sum=0;
-while(num>0)
-{
-  let digit=num%10;
-  sum = sum+digit;
-  num=parseInt(num/10);
+// let num=1234;
+// let sum=0;
+// while(num>0)
+// {
+//   let digit=num%10;
+//   sum = sum+digit;
+//   num=parseInt(num/10);
+// }
+// console.log(num);
+
+//18.gcd
+let a = 12;
+let b = 18;
+
+while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
 }
-console.log(num);
+console.log("GCD =", a);
