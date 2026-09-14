@@ -187,12 +187,27 @@
 // console.log(num);
 
 //18.gcd
+// let a = 12;
+// let b = 18;
+
+// while (b !== 0) {
+//     let temp = b;
+//     b = a % b;
+//     a = temp;
+// }
+// console.log("GCD =", a);
+
+//19.lcm
 let a = 12;
 let b = 18;
 
-while (b !== 0) {
-    let temp = b;
-    b = a % b;
-    a = temp;
+let x = a;
+let y = b;
+
+while (y !== 0) {
+    let temp = y;
+    y = x % y;
+    x = temp;
 }
-console.log("GCD =", a);
+
+console.log("GCD =", x);
