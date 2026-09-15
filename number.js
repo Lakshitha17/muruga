@@ -213,15 +213,20 @@
 // console.log("GCD =", x);
 
 //20.smallest digit
-let n = 58321;
-let smallest = 9;
+// let n = 58321;
+// let smallest = 9;
 
-while (n > 0) {
-    let digit = n % 10;
+// while (n > 0) {
+//     let digit = n % 10;
 
-    if (digit < smallest) {
-        smallest = digit;
-    }
-    n = Math.floor(n / 10);
-}
-console.log("Smallest digit =", smallest);
+//     if (digit < smallest) {
+//         smallest = digit;
+//     }
+//     n = Math.floor(n / 10);
+// }
+// console.log("Smallest digit =", smallest);
+
+//21.square the number
+let num =30;
+let lak = n*n;
+console.log(lak)
