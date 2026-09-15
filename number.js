@@ -256,15 +256,25 @@
 // }
 
 //24.smallest number
-let n = 1345;
-let smallest = 9;
-while(n>0)
+// let n = 1345;
+// let smallest = 9;
+// while(n>0)
+// {
+//   digit = n%10;
+//   if(digit<smallest)
+//   {
+//     smallest = digit
+//   }
+//   n = parseInt(n/10)
+// }
+// console.log(smallest)
+
+//Automorphic number
+let num = 5;
+let lak = 25;
+if(lak%10==num)
 {
-  digit = n%10;
-  if(digit<smallest)
-  {
-    smallest = digit
-  }
-  n = parseInt(n/10)
+    console.log("Automorphic number")
 }
-console.log(smallest)
+else
+    console.log("not automorphic number")
