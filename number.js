@@ -232,12 +232,25 @@
 // console.log(lak)
 
 //22.product of numbers
-let n =1234;
-let product = 1;
+// let n =1234;
+// let product = 1;
+// while(n>0)
+// {
+//     let digit = n%10;
+//     product = product*digit;
+//     n=n/10;
+// }
+// console.log(product)
+
+//23.largest number
+let n=14627;
+let largest = 0;
 while(n>0)
 {
-    let digit = n%10;
-    product = product*digit;
-    n=n/10;
+    let digit=n%10;
+    if(digit>largest)
+    {
+        largest = digit;
+    }
+    n=paseInt(n/10)
 }
-console.log(product)
