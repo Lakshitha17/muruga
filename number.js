@@ -227,6 +227,17 @@
 // console.log("Smallest digit =", smallest);
 
 //21.square the number
-let num =30;
-let lak = n*n;
-console.log(lak)
+// let num =30;
+// let lak = n*n;
+// console.log(lak)
+
+//22.product of numbers
+let n =1234;
+let product = 1;
+while(n>0)
+{
+    let digit = n%10;
+    product = product*digit;
+    n=n/10;
+}
+console.log(product)
