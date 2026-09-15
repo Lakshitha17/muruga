@@ -243,14 +243,28 @@
 // console.log(product)
 
 //23.largest number
-let n=14627;
-let largest = 0;
+// let n=14627;
+// let largest = 0;
+// while(n>0)
+// {
+//     let digit=n%10;
+//     if(digit>largest)
+//     {
+//         largest = digit;
+//     }
+//     n=paseInt(n/10)
+// }
+
+//24.smallest number
+let n = 1345;
+let smallest = 9;
 while(n>0)
 {
-    let digit=n%10;
-    if(digit>largest)
-    {
-        largest = digit;
-    }
-    n=paseInt(n/10)
+  digit = n%10;
+  if(digit<smallest)
+  {
+    smallest = digit
+  }
+  n = parseInt(n/10)
 }
+console.log(smallest)
