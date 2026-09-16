@@ -307,11 +307,24 @@
 // console.log(reversename);
 
 //28.count characers in string
-let name = "abcde";
-let count = 0;
+// let name = "abcde";
+// let count = 0;
 
-for (let i = 0; i < name.length; i++) {
-    count++;
+// for (let i = 0; i < name.length; i++) {
+//     count++;
+// }
+
+// console.log("Count =", count);
+
+//29.smallest number in array
+let arr = [10, 5, 20, 3, 15];
+
+let small = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < small) {
+        small = arr[i];
+    }
 }
 
-console.log("Count =", count);
+console.log("Smallest =", small);
