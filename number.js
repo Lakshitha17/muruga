@@ -297,11 +297,21 @@
 // }
 
 //27.reverse a nmame
-let name = "abc";
-let reversename = "";
+// let name = "abc";
+// let reversename = "";
 
-for (let i = name.length - 1; i >= 0; i--) {
-    reversename = reversename + name[i];
+// for (let i = name.length - 1; i >= 0; i--) {
+//     reversename = reversename + name[i];
+// }
+
+// console.log(reversename);
+
+//28.count characers in string
+let name = "abcde";
+let count = 0;
+
+for (let i = 0; i < name.length; i++) {
+    count++;
 }
 
-console.log(reversename);
+console.log("Count =", count);
