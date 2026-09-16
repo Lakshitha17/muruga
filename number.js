@@ -317,14 +317,27 @@
 // console.log("Count =", count);
 
 //29.smallest number in array
+// let arr = [10, 5, 20, 3, 15];
+
+// let small = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < small) {
+//         small = arr[i];
+//     }
+// }
+
+// console.log("Smallest =", small);
+
+//30.largest element in array
 let arr = [10, 5, 20, 3, 15];
 
-let small = arr[0];
+let great = arr[0];
 
 for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < small) {
-        small = arr[i];
+    if (arr[i] > great) {
+        great = arr[i];
     }
 }
 
-console.log("Smallest =", small);
+console.log("Greatest =", great);
