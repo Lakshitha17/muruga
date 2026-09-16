@@ -269,7 +269,7 @@
 // }
 // console.log(smallest)
 
-//Automorphic number
+//25.Automorphic number
 // let num = 5;
 // let lak = 25;
 // if(lak%10==num)
@@ -279,19 +279,29 @@
 // else
 //     console.log("not automorphic number")
 
-//neon number
-let n = 9;
-let square = n * n;
-let sum = 0;
+//26.neon number
+// let n = 9;
+// let square = n * n;
+// let sum = 0;
 
-while (square > 0) {
-    let digit = square % 10;
-    sum = sum + digit;
-    square = Math.floor(square / 10);
+// while (square > 0) {
+//     let digit = square % 10;
+//     sum = sum + digit;
+//     square = Math.floor(square / 10);
+// }
+
+// if (sum == n) {
+//     console.log("Neon Number");
+// } else {
+//     console.log("Not Neon Number");
+// }
+
+//27.reverse a nmame
+let name = "abc";
+let reversename = "";
+
+for (let i = name.length - 1; i >= 0; i--) {
+    reversename = reversename + name[i];
 }
 
-if (sum == n) {
-    console.log("Neon Number");
-} else {
-    console.log("Not Neon Number");
-}
+console.log(reversename);
