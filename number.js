@@ -353,15 +353,22 @@
 // console.log(count);
 
 //32.count the odd digits
-let n = 12345;
-let count =0 ;
-while(n>0)
-{
-    let dig = n%10;
-    if(dig%2!=0)
-    {
-        count++
-    }
-    n = parseInt(n/10)
+// let n = 12345;
+// let count =0 ;
+// while(n>0)
+// {
+//     let dig = n%10;
+//     if(dig%2!=0)
+//     {
+//         count++
+//     }
+//     n = parseInt(n/10)
+// }
+// console.log(count)
+
+//33.find 1st digit
+let num = 12345;
+while (num >= 10) {
+    num = parseInt(num / 10);
 }
-console.log(count)
+console.log(num);
