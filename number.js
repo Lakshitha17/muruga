@@ -339,15 +339,29 @@
 // console.log("Greatest =", great);
 
 //31.count the even digits
-let n = 123456;
-let count = 0;
-while (n > 0) {
-    let digit = n % 10;
+// let n = 123456;
+// let count = 0;
+// while (n > 0) {
+//     let digit = n % 10;
 
-    if (digit % 2 == 0) {
-        count++;
+//     if (digit % 2 == 0) {
+//         count++;
+//     }
+
+//     n = parseInt(n / 10);
+// }
+// console.log(count);
+
+//32.count the odd digits
+let n = 12345;
+let count =0 ;
+while(n>0)
+{
+    let dig = n%10;
+    if(dig%2!=0)
+    {
+        count++
     }
-
-    n = Math.floor(n / 10);
+    n = parseInt(n/10)
 }
-console.log(count);
+console.log(count)
