@@ -326,18 +326,28 @@
 //         small = arr[i];
 //     }
 // }
-
 // console.log("Smallest =", small);
 
 //30.largest element in array
-let arr = [10, 5, 20, 3, 15];
+// let arr = [10, 5, 20, 3, 15];
+// let great = arr[0]
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > great) {
+//         great = arr[i];
+//     }
+// }
+// console.log("Greatest =", great);
 
-let great = arr[0];
+//31.count the even digits
+let n = 123456;
+let count = 0;
+while (n > 0) {
+    let digit = n % 10;
 
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > great) {
-        great = arr[i];
+    if (digit % 2 == 0) {
+        count++;
     }
-}
 
-console.log("Greatest =", great);
+    n = Math.floor(n / 10);
+}
+console.log(count);
