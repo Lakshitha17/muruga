@@ -379,6 +379,16 @@
 // console.log(jak)
 
 //35.ascending order of a string
-let lak = "ajfukpo"
-let jak = lak.split("").sort().join("")
-console.log(jak)
+// let lak = "ajfukpo"
+// let jak = lak.split("").sort().join("")
+// console.log(jak)
+
+//36.duplicate of string
+let str = "lakshitha"
+let result  = ""
+for(let i = 0 ; i<str.length ; i++)
+{
+  if(!result.includes(str[i]))
+    result += str[i]
+}
+console.log(result)
