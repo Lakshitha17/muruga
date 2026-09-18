@@ -367,8 +367,13 @@
 // console.log(count)
 
 //33.find 1st digit
-let num = 12345;
-while (num >= 10) {
-    num = parseInt(num / 10);
-}
-console.log(num);
+// let num = 12345;
+// while (num >= 10) {
+//     num = parseInt(num / 10);
+// }
+// console.log(num);
+
+//34.descending order of a string
+let lak = "ajfukpo"
+let jak = lak.split("").sort().reverse().join("")
+console.log(jak)
