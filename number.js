@@ -374,6 +374,11 @@
 // console.log(num);
 
 //34.descending order of a string
+// let lak = "ajfukpo"
+// let jak = lak.split("").sort().reverse().join("")
+// console.log(jak)
+
+//35.ascending order of a string
 let lak = "ajfukpo"
-let jak = lak.split("").sort().reverse().join("")
+let jak = lak.split("").sort().join("")
 console.log(jak)
