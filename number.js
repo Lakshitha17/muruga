@@ -385,12 +385,27 @@
 // }
 // console.log(result)
 
-//find the space in the string
-let num = "hi guys welcome to srm madurai "
-let count = 0;
+//37.find the space in the string
+// let num = "hi guys welcome to srm madurai "
+// let count = 0;
+// for(let i=0;i<num.length;i++)
+// {
+//   if(num[i]==" ")
+//     count++
+// }
+// console.log(count)
+
+//38.find the duplicate
+let num = "lakshitha neelakandan"
+let revesre = " "
 for(let i=0;i<num.length;i++)
 {
-  if(num[i]==" ")
-    count++
+  if(num.indexOf(num[i])!=num.lastIndexOf(num[i]))
+  {
+    if(!reverse.includes(num[i]))
+    {
+      reverse = reverse+num[i]
+  }
 }
-console.log(count)
+}
+console.log(reverse)
