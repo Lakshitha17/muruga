@@ -396,16 +396,26 @@
 // console.log(count)
 
 //38.find the duplicate
-let num = "lakshitha neelakandan"
-let revesre = " "
-for(let i=0;i<num.length;i++)
-{
-  if(num.indexOf(num[i])!=num.lastIndexOf(num[i]))
-  {
-    if(!reverse.includes(num[i]))
-    {
-      reverse = reverse+num[i]
-  }
+// let num = "lakshitha neelakandan"
+// let revesre = " "
+// for(let i=0;i<num.length;i++)
+// {
+//   if(num.indexOf(num[i])!=num.lastIndexOf(num[i]))
+//   {
+//     if(!reverse.includes(num[i]))
+//     {
+//       reverse = reverse+num[i]
+//   }
+// }
+// }
+// console.log(reverse)
+
+//39.find the min in array
+let arr = [5, 6, 8, 1];
+let min = arr[0];
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+        min = arr[i];
+    }
 }
-}
-console.log(reverse)
+console.log(min);
