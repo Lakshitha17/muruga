@@ -283,13 +283,11 @@
 // let n = 9;
 // let square = n * n;
 // let sum = 0;
-
 // while (square > 0) {
 //     let digit = square % 10;
 //     sum = sum + digit;
 //     square = Math.floor(square / 10);
 // }
-
 // if (sum == n) {
 //     console.log("Neon Number");
 // } else {
@@ -299,28 +297,22 @@
 //27.reverse a nmame
 // let name = "abc";
 // let reversename = "";
-
 // for (let i = name.length - 1; i >= 0; i--) {
 //     reversename = reversename + name[i];
 // }
-
 // console.log(reversename);
 
 //28.count characers in string
 // let name = "abcde";
 // let count = 0;
-
 // for (let i = 0; i < name.length; i++) {
 //     count++;
 // }
-
 // console.log("Count =", count);
 
 //29.smallest number in array
 // let arr = [10, 5, 20, 3, 15];
-
 // let small = arr[0];
-
 // for (let i = 1; i < arr.length; i++) {
 //     if (arr[i] < small) {
 //         small = arr[i];
@@ -384,11 +376,21 @@
 // console.log(jak)
 
 //36.duplicate of string
-let str = "lakshitha"
-let result  = ""
-for(let i = 0 ; i<str.length ; i++)
+// let str = "lakshitha"
+// let result  = ""
+// for(let i = 0 ; i<str.length ; i++)
+// {
+//   if(!result.includes(str[i]))
+//     result += str[i]
+// }
+// console.log(result)
+
+//find the space in the string
+let num = "hi guys welcome to srm madurai "
+let count = 0;
+for(let i=0;i<num.length;i++)
 {
-  if(!result.includes(str[i]))
-    result += str[i]
+  if(num[i]==" ")
+    count++
 }
-console.log(result)
+console.log(count)
