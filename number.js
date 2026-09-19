@@ -411,11 +411,21 @@
 // console.log(reverse)
 
 //39.find the min in array
+// let arr = [5, 6, 8, 1];
+// let min = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+// find max in array
 let arr = [5, 6, 8, 1];
-let min = arr[0];
+let max = arr[0];
 for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < min) {
+    if (arr[i] > max) {
         min = arr[i];
     }
 }
-console.log(min);
+console.log(max);
