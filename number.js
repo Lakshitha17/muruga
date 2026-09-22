@@ -421,56 +421,56 @@
 // console.log(min);
 
 //40. find max in array
-// let arr = [5, 6, 8, 1];
-// let max = arr[0];
-// for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] > max) {
-//         min = arr[i];
-//     }
-// }
-// console.log(max);
+let arr = [5, 6, 8, 1];
+let max = arr[0];
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+        min = arr[i];
+    }
+}
+console.log(max);
 
-//41.matrix addition
-// var mat1 = [[1,1],[2,2]]
-// var mat2  = [[1,1],[2,2]]
-// var result = [[0,0],[0,0]]
-// for(i=0;i<2;i++)
-// {
-//   for(j=0;j<2;j++)
-//   {
-//     result[i][j] = mat1[i][j]*mat2[i][j]
-    
-//   }
-
-// }
-// for(k=0;k<2;k++){
-//   var line=" "
-//   for(l=0;l<2;l++)
-//   {
-    
-//     line = line + result[k][l]+" "
-//   }
-//   console.log(line)
-// }
-
-//42.matrix mul
-let mat1 = [[1,1],[2,2]]
-let mat2 = [[2,2],[3,3]]
-let result = [[0,0],[0,0]]
-for(let i=0;i<2;i++)
+41.matrix addition
+var mat1 = [[1,1],[2,2]]
+var mat2  = [[1,1],[2,2]]
+var result = [[0,0],[0,0]]
+for(i=0;i<2;i++)
 {
   for(j=0;j<2;j++)
   {
-    result[i][j]=mat1[i][j]*mat2[i][j]
+    result[i][j] = mat1[i][j]*mat2[i][j]
+    
   }
+
 }
-for(let l=0;l<2;l++)
-{
-  let  line  = " "
-  for(let k=0;k<2;k++)
+for(k=0;k<2;k++){
+  var line=" "
+  for(l=0;l<2;l++)
   {
-    line = line + result[l][k]+" "
+    
+    line = line + result[k][l]+" "
   }
   console.log(line)
 }
+
+//42.matrix mul
+// let mat1 = [[1,1],[2,2]]
+// let mat2 = [[2,2],[3,3]]
+// let result = [[0,0],[0,0]]
+// for(let i=0;i<2;i++)
+// {
+//   for(j=0;j<2;j++)
+//   {
+//     result[i][j]=mat1[i][j]*mat2[i][j]
+//   }
+// }
+// for(let l=0;l<2;l++)
+// {
+//   let  line  = " "
+//   for(let k=0;k<2;k++)
+//   {
+//     line = line + result[l][k]+" "
+//   }
+//   console.log(line)
+// }
     
