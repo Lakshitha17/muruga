@@ -421,16 +421,16 @@
 // console.log(min);
 
 //40. find max in array
-let arr = [5, 6, 8, 1];
-let max = arr[0];
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-        min = arr[i];
-    }
-}
-console.log(max);
+// let arr = [5, 6, 8, 1];
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         min = arr[i];
+//     }
+// }
+// console.log(max);
 
-41.matrix addition
+// 41.matrix addition
 var mat1 = [[1,1],[2,2]]
 var mat2  = [[1,1],[2,2]]
 var result = [[0,0],[0,0]]
