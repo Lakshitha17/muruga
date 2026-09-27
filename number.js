@@ -493,9 +493,19 @@
 // console.log(person2.name);
 
 //45.sum of array length
-let arr = [10, 20, 30, 40];
+// let arr = [10, 20, 30, 40];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i];
+// }
+// console.log(sum);
+
+//46.sum of even number
+let arr = [10, 15, 20, 25, 30];
 let sum = 0;
 for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i];
+    if (arr[i] % 2 == 0) {
+        sum = sum + arr[i];
+    }
 }
 console.log(sum);
