@@ -454,23 +454,31 @@
 // }
 
 //42.matrix mul
-let mat1 = [[1,1],[2,2]]
-let mat2 = [[2,2],[3,3]]
-let result = [[0,0],[0,0]]
-for(let i=0;i<2;i++)
-{
-  for(j=0;j<2;j++)
-  {
-    result[i][j]=mat1[i][j]*mat2[i][j]
-  }
-}
-for(let l=0;l<2;l++)
-{
-  let  line  = " "
-  for(let k=0;k<2;k++)
-  {
-    line = line + result[l][k]+" "
-  }
-  console.log(line)
-}
+// let mat1 = [[1,1],[2,2]]
+// let mat2 = [[2,2],[3,3]]
+// let result = [[0,0],[0,0]]
+// for(let i=0;i<2;i++)
+// {
+//   for(j=0;j<2;j++)
+//   {
+//     result[i][j]=mat1[i][j]*mat2[i][j]
+//   }
+// }
+// for(let l=0;l<2;l++)
+// {
+//   let  line  = " "
+//   for(let k=0;k<2;k++)
+//   {
+//     line = line + result[l][k]+" "
+//   }
+//   console.log(line)
+// }
     
+//43.value type
+let a = 10;
+let b = a;
+
+b = 20;
+
+console.log(a);
+console.log(b);
