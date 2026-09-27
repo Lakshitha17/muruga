@@ -484,13 +484,18 @@
 // console.log(b);
 
 //44.reference type
-let person1 = {
-    name: "Lakshitha"
-};
+// let person1 = {
+//     name: "Lakshitha"
+// };
+// let person2 = person1;
+// person2.name = "Dhan";
+// console.log(person1.name);
+// console.log(person2.name);
 
-let person2 = person1;
-
-person2.name = "Dhan";
-
-console.log(person1.name);
-console.log(person2.name);
+//45.sum of array length
+let arr = [10, 20, 30, 40];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+}
+console.log(sum);
