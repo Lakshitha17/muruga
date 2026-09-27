@@ -475,10 +475,22 @@
 // }
     
 //43.value type
-let a = 10;
-let b = a;
+// let a = 10;
+// let b = a;
 
-b = 20;
+// b = 20;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+//44.reference type
+let person1 = {
+    name: "Lakshitha"
+};
+
+let person2 = person1;
+
+person2.name = "Dhan";
+
+console.log(person1.name);
+console.log(person2.name);
