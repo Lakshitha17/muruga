@@ -521,10 +521,20 @@
 // console.log(sum);
 
 //48.sum of the digits in array
-let arr = [10,20,30,40]
-let sum = 0;
+// let arr = [10,20,30,40]
+// let sum = 0;
+// for(let i=0;i<arr.length;i++)
+// {
+//   sum = sum+arr[i]
+// }
+// console.log(sum)
+
+//49.sum of the even numbers in array
+let arr = [20,30,56,74,36,200]
+let sum = 0; 
 for(let i=0;i<arr.length;i++)
 {
-  sum = sum+arr[i]
+  if(arr[i]%2==0)
+    sum=sum+arr[i]
 }
 console.log(sum)
