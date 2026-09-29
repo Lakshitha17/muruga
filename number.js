@@ -511,11 +511,20 @@
 // console.log(sum);
 
 //47.sum of odd number
-let arr = [10, 15, 20, 25, 30];
+// let arr = [10, 15, 20, 25, 30];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 != 0) {
+//         sum = sum + arr[i];
+//     }
+// }
+// console.log(sum);
+
+//48.sum of the digits in array
+let arr = [10,20,30,40]
 let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 != 0) {
-        sum = sum + arr[i];
-    }
+for(let i=0;i<arr.length;i++)
+{
+  sum = sum+arr[i]
 }
-console.log(sum);
+console.log(sum)
