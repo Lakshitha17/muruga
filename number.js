@@ -540,11 +540,22 @@
 // console.log(sum)
 
 //50. sum of the odd numbers in array
+// let a = [10, 15, 20, 25, 30];
+// let sum = 0;
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] % 2 != 0) {
+//         sum = sum + a[i];
+//     }
+// }
+// console.log(sum);
+
+//51.count the even numbers
 let a = [10, 15, 20, 25, 30];
-let sum = 0;
+let count = 0;
+
 for (let i = 0; i < a.length; i++) {
-    if (a[i] % 2 != 0) {
-        sum = sum + a[i];
+    if (a[i] % 2 == 0) {
+        count++;
     }
 }
-console.log(sum);
+console.log(count);
