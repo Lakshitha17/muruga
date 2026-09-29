@@ -530,11 +530,21 @@
 // console.log(sum)
 
 //49.sum of the even numbers in array
-let arr = [20,30,56,74,36,200]
-let sum = 0; 
-for(let i=0;i<arr.length;i++)
-{
-  if(arr[i]%2==0)
-    sum=sum+arr[i]
+// let arr = [20,30,56,74,36,200]
+// let sum = 0; 
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]%2==0)
+//     sum=sum+arr[i]
+// }
+// console.log(sum)
+
+//50. sum of the odd numbers in array
+let a = [10, 15, 20, 25, 30];
+let sum = 0;
+for (let i = 0; i < a.length; i++) {
+    if (a[i] % 2 != 0) {
+        sum = sum + a[i];
+    }
 }
-console.log(sum)
+console.log(sum);
