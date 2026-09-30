@@ -577,7 +577,7 @@
 
 // greeting() // Function call 
 
-//No Parameter + Return Value
+//54.No Parameter + Return Value
 // function hallo(){
 //     return "Hi How are you"
 // }
@@ -585,10 +585,15 @@
 // console.log(name)
 // console.log(hallo())
 
-//// 2.with parameter , without return type
-function add(num1,num2){
-  console.log(num1+num2)
+//// 55.with parameter , without return type
+// function add(num1,num2){
+//   console.log(num1+num2)
+// }
+// add(10,20)
+
+// 53./ 4. with Parameter , with return type
+function mul(num1,num2){
+    return num1 * num2
 }
-add(10,20)
-
-
+console.log("mul1",mul(10,20))
+console.log("mul2",mul(100,200))
