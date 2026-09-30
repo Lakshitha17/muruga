@@ -571,8 +571,17 @@
 // console.log(count);
 
 //53.without parameter without return type
-function greeting(){        //
-  console.log("Hallo world") // function declaration
-}                            // 
+// function greeting(){        //
+//   console.log("Hallo world") // function declaration
+// }                            // 
 
-greeting() // Function call 
+// greeting() // Function call 
+
+//No Parameter + Return Value
+function hallo(){
+    return "Hi How are you"
+}
+let name = hallo()
+console.log(name)
+console.log(hallo())
+
