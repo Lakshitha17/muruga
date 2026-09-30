@@ -578,10 +578,17 @@
 // greeting() // Function call 
 
 //No Parameter + Return Value
-function hallo(){
-    return "Hi How are you"
+// function hallo(){
+//     return "Hi How are you"
+// }
+// let name = hallo()
+// console.log(name)
+// console.log(hallo())
+
+//// 2.with parameter , without return type
+function add(num1,num2){
+  console.log(num1+num2)
 }
-let name = hallo()
-console.log(name)
-console.log(hallo())
+add(10,20)
+
 
