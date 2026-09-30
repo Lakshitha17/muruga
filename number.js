@@ -550,15 +550,15 @@
 // console.log(sum);
 
 //51.count the even numbers
-let a = [10, 15, 20, 25, 30];
-let count = 0;
+// let a = [10, 15, 20, 25, 30];
+// let count = 0;
 
-for (let i = 0; i < a.length; i++) {
-    if (a[i] % 2 == 0) {
-        count++;
-    }
-}
-console.log(count);
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] % 2 == 0) {
+//         count++;
+//     }
+// }
+// console.log(count);
 
 //52.count the odd number
 // let a = [10, 15, 20, 25, 30];
@@ -569,3 +569,10 @@ console.log(count);
 //     }
 // }
 // console.log(count);
+
+//53.without parameter without return type
+function greeting(){        //
+  console.log("Hallo world") // function declaration
+}                            // 
+
+greeting() // Function call 
