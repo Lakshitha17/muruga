@@ -598,7 +598,7 @@
 // console.log("mul1",mul(10,20))
 // console.log("mul2",mul(100,200))
 
-54.synchronization
+//54.synchronization
 console.log("A");
 console.log("B");
 console.log("C");
