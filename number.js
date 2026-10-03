@@ -599,6 +599,15 @@
 // console.log("mul2",mul(100,200))
 
 //54.synchronization
-console.log("A");
-console.log("B");
-console.log("C");
+// console.log("A");
+// console.log("B");
+// console.log("C");
+
+//55.asynchronization
+function factorial(n) {
+    if (n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+console.log(factorial(5));
