@@ -591,9 +591,14 @@
 // }
 // add(10,20)
 
-// 53./ 4. with Parameter , with return type
-function mul(num1,num2){
-    return num1 * num2
-}
-console.log("mul1",mul(10,20))
-console.log("mul2",mul(100,200))
+// 53. with Parameter , with return type
+// function mul(num1,num2){
+//     return num1 * num2
+// }
+// console.log("mul1",mul(10,20))
+// console.log("mul2",mul(100,200))
+
+54.synchronization
+console.log("A");
+console.log("B");
+console.log("C");
