@@ -625,9 +625,21 @@
 
 //57.Print 1 to N using Recursion.
 
-function printNumbers(n) {
-    if (n > 5) return;
-    console.log(n);
-    printNumbers(n + 1);
+// function printNumbers(n) {
+//     if (n > 5) return;
+//     console.log(n);
+//     printNumbers(n + 1);
+// }
+// printNumbers(1);
+
+//58.sum of the natural numbers using recursion
+function number(n)
+{
+  if(n>5)
+  {
+    return 1;
+  }
+  console.log(n)
+   number (n+1)
 }
-printNumbers(1);
+number(1)
