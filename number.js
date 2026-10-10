@@ -613,12 +613,21 @@
 // console.log(factorial(5));
 
 //56.factorial using recrussion
-function factorial(n)
-{
-  if(n==1)
-  {
-    return 1
-  }
-  return n * factorial(n-1)
+// function factorial(n)
+// {
+//   if(n==1)
+//   {
+//     return 1
+//   }
+//   return n * factorial(n-1)
+// }
+// console.log(factorial(5))
+
+//57.Print 1 to N using Recursion.
+
+function printNumbers(n) {
+    if (n > 5) return;
+    console.log(n);
+    printNumbers(n + 1);
 }
-console.log(factorial(5))
+printNumbers(1);
