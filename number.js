@@ -633,13 +633,24 @@
 // printNumbers(1);
 
 //58.sum of the natural numbers using recursion
+// function number(n)
+// {
+//   if(n>5)
+//   {
+//     return 1;
+//   }
+//   console.log(n)
+//    number (n+1)
+// }
+// number(1)
+
+//59.sum of digit using recrussion
 function number(n)
 {
-  if(n>5)
+  if(n == 0)
   {
-    return 1;
+    return 0
   }
-  console.log(n)
-   number (n+1)
+  return (n%10) + number(parseInt(n/10))
 }
-number(1)
+console.log(number(12345))
