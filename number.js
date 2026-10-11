@@ -645,12 +645,19 @@
 // number(1)
 
 //59.sum of digit using recrussion
-function number(n)
+// function number(n)
+// {
+//   if(n == 0)
+//   {
+//     return 0
+//   }
+//   return (n%10) + number(parseInt(n/10))
+// }
+// console.log(number(12345))
+
+//60.parameter
+function name(a,b)
 {
-  if(n == 0)
-  {
-    return 0
-  }
-  return (n%10) + number(parseInt(n/10))
+  return a+b
 }
-console.log(number(12345))
+console.log(name(10,30))
