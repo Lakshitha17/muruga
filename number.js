@@ -655,9 +655,17 @@
 // }
 // console.log(number(12345))
 
-//60.parameter
+//60.parameter add
+// function name(a,b)
+// {
+//   return a+b
+// }
+// console.log(name(10,30))
+
+//61.parameter sub
 function name(a,b)
 {
-  return a+b
+  return a-b
 }
 console.log(name(10,30))
+
