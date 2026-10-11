@@ -670,9 +670,22 @@
 // console.log(name(10,30))
 
 //62.square number
-function name(a)
-{
-  return a*a
-}
-console.log(name(10))
+// function name(a)
+// {
+//   return a*a
+// }
+// console.log(name(10))
 
+//63.Even or odd
+function name(n)
+{
+  if(n%2==0)
+  {
+    return "Even";
+  }
+  else
+  {
+   return "odd";
+  }
+}
+console.log(name(10));
