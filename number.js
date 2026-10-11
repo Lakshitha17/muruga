@@ -663,9 +663,16 @@
 // console.log(name(10,30))
 
 //61.parameter sub
-function name(a,b)
+// function name(a,b)
+// {
+//   return a-b
+// }
+// console.log(name(10,30))
+
+//62.square number
+function name(a)
 {
-  return a-b
+  return a*a
 }
-console.log(name(10,30))
+console.log(name(10))
 
