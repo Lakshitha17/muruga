@@ -677,15 +677,31 @@
 // console.log(name(10))
 
 //63.Even or odd
-function name(n)
+// function name(n)
+// {
+//   if(n%2==0)
+//   {
+//     return "Even";
+//   }
+//   else
+//   {
+//    return "odd";
+//   }
+// }
+// console.log(name(10));
+
+//64.largest of 2 number
+function name (a,b)
 {
-  if(n%2==0)
+  if(a<b)
   {
-    return "Even";
+    console.log("Enter the a")
+    return a;
   }
   else
   {
-   return "odd";
+    console.log("Enter the b")
+    return b;
   }
 }
-console.log(name(10));
+console.log(name(10,12))
