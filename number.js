@@ -721,13 +721,25 @@
 // console.log(reverse)
 
 //67.array using largest number
-let arr = [10,20,30,40,50]
-let max = arr[0]
-for(let i=0; i<arr.length;i++)
+// let arr = [10,20,30,40,50]
+// let max = arr[0]
+// for(let i=0; i<arr.length;i++)
+// {
+//   if(arr[i]>max)
+//   {
+//     max = arr[i]
+//   }
+// }
+// console.log(max)
+
+//68.array using smallest number
+arr = [10,20,30,40,50]
+let min = arr[0]
+for(let i=0;i<arr.length;i++)
 {
-  if(arr[i]>max)
+  if(arr[i]<min)
   {
-    max = arr[i]
+    min = arr[i]
   }
 }
-console.log(max)
+console.log(min)
