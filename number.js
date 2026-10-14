@@ -757,13 +757,31 @@
 // console.log(sum)
 
 //70.averge in the array
-let arr = [1,2,3,4,5]
-let sum = 0;
+// let arr = [1,2,3,4,5]
+// let sum = 0;
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]<=5)
+//   {
+//     sum = sum+arr[i]
+//   }
+// }
+// console.log(sum/arr.length)
+
+//71.count even and odd in array
+let arr = [1,2,3,4,5,6,7]
+let even = 0;
+let odd = 0;
 for(let i=0;i<arr.length;i++)
 {
-  if(arr[i]<=5)
+  if(arr[i]%2==0)
   {
-    sum = sum+arr[i]
+    even++;
+  }
+  else
+  {
+    odd++
   }
 }
-console.log(sum/arr.length)
+console.log("Enter the even number:", even)
+console.log("Enter the odd number:", odd)
