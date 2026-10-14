@@ -712,10 +712,22 @@
 // console.log(result)
 
 //66.reverse a sting using recrussion
-let name = "Lakshitha"
-let reverse = "";
-for(let i=name.length-1;i>=0;i--)
+// let name = "Lakshitha"
+// let reverse = "";
+// for(let i=name.length-1;i>=0;i--)
+// {
+//   reverse = reverse+name[i]
+// }
+// console.log(reverse)
+
+//67.array using largest number
+let arr = [10,20,30,40,50]
+let max = arr[0]
+for(let i=0; i<arr.length;i++)
 {
-  reverse = reverse+name[i]
+  if(arr[i]>max)
+  {
+    max = arr[i]
+  }
 }
-console.log(reverse)
+console.log(max)
