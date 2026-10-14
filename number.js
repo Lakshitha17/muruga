@@ -745,6 +745,18 @@
 // console.log(min)
 
 //69.calculte the sum of the elements in array
+// let arr = [1,2,3,4,5]
+// let sum = 0;
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]<=5)
+//   {
+//     sum = sum+arr[i]
+//   }
+// }
+// console.log(sum)
+
+//70.averge in the array
 let arr = [1,2,3,4,5]
 let sum = 0;
 for(let i=0;i<arr.length;i++)
@@ -754,4 +766,4 @@ for(let i=0;i<arr.length;i++)
     sum = sum+arr[i]
   }
 }
-console.log(sum)
+console.log(sum/arr.length)
