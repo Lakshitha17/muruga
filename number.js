@@ -769,19 +769,37 @@
 // console.log(sum/arr.length)
 
 //71.count even and odd in array
-let arr = [1,2,3,4,5,6,7]
-let even = 0;
-let odd = 0;
+// let arr = [1,2,3,4,5,6,7]
+// let even = 0;
+// let odd = 0;
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]%2==0)
+//   {
+//     even++;
+//   }
+//   else
+//   {
+//     odd++
+//   }
+// }
+// console.log("Enter the even number:", even)
+// console.log("Enter the odd number:", odd)
+
+//72.find the max and min in array
+let arr = [15,25,3,18]
+let max = arr[0]
+let min = arr[0]
 for(let i=0;i<arr.length;i++)
 {
-  if(arr[i]%2==0)
+  if(arr[i]>max)
   {
-    even++;
+    max = arr[i]
   }
-  else
+  else if (arr[i]<min)
   {
-    odd++
+    min = arr[i]
   }
 }
-console.log("Enter the even number:", even)
-console.log("Enter the odd number:", odd)
+console.log("Enter the maximum:",max)
+console.log("Enter the minimum:",min)
