@@ -805,10 +805,22 @@
 // console.log("Enter the minimum:",min)
 
 //73.search an element
-let lak = [10,20,30,40]
+// let lak = [10,20,30,40]
+// for(let i=0;i<lak.length;i++)
+// {
+//   if(lak[i]==30)
+//   {
+//     console.log("Element found",lak[i])
+//   }
+
+//74.duplicate remove
+let lak = [1,2,2,3,4,4,5]
+let result = ""
 for(let i=0;i<lak.length;i++)
 {
-  if(lak[i]==30)
+  if(!result.includes(lak[i]))
   {
-    console.log("Element found",lak[i])
+    result = result + lak[i]  
   }
+}
+console.log(result)
