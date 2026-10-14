@@ -787,19 +787,28 @@
 // console.log("Enter the odd number:", odd)
 
 //72.find the max and min in array
-let arr = [15,25,3,18]
-let max = arr[0]
-let min = arr[0]
-for(let i=0;i<arr.length;i++)
+// let arr = [15,25,3,18]
+// let max = arr[0]
+// let min = arr[0]
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]>max)
+//   {
+//     max = arr[i]
+//   }
+//   else if (arr[i]<min)
+//   {
+//     min = arr[i]
+//   }
+// }
+// console.log("Enter the maximum:",max)
+// console.log("Enter the minimum:",min)
+
+//73.search an element
+let lak = [10,20,30,40]
+for(let i=0;i<lak.length;i++)
 {
-  if(arr[i]>max)
+  if(lak[i]==30)
   {
-    max = arr[i]
+    console.log("Element found",lak[i])
   }
-  else if (arr[i]<min)
-  {
-    min = arr[i]
-  }
-}
-console.log("Enter the maximum:",max)
-console.log("Enter the minimum:",min)
