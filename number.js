@@ -814,13 +814,33 @@
 //   }
 
 //74.duplicate remove
-let lak = [1,2,2,3,4,4,5]
-let result = ""
-for(let i=0;i<lak.length;i++)
-{
-  if(!result.includes(lak[i]))
-  {
-    result = result + lak[i]  
+// let lak = [1,2,2,3,4,4,5]
+// let result = ""
+// for(let i=0;i<lak.length;i++)
+// {
+//   if(!result.includes(lak[i]))
+//   {
+//     result = result + lak[i]  
+//   }
+// }
+// console.log(result)
+
+
+//75.duplicate remove anither method to use
+let arr = [1,2,2,3,4,4,5]
+let newarr = []
+for(let i=0;i<arr.length;i++){
+  let isduplicate = false
+
+ for(let j=0;j<newarr.length;j++){
+   if(arr[i] === newarr[j]){
+     isduplicate = true
+     break
+   }
+ }
+  
+  if(! isduplicate){
+    newarr.push(arr[i])
   }
 }
-console.log(result)
+console.log(newarr)
