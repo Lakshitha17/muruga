@@ -691,17 +691,31 @@
 // console.log(name(10));
 
 //64.largest of 2 number
-function name (a,b)
+// function name (a,b)
+// {
+//   if(a<b)
+//   {
+//     console.log("Enter the a")
+//     return a;
+//   }
+//   else
+//   {
+//     console.log("Enter the b")
+//     return b;
+//   }
+// }
+// console.log(name(10,12))
+
+//65.slice using arry
+// let fruits = ["banana","apple","berry","mango"]
+// let result = fruits.slice(1,2);
+// console.log(result)
+
+//66.reverse a sting using recrussion
+let name = "Lakshitha"
+let reverse = "";
+for(let i=name.length-1;i>=0;i--)
 {
-  if(a<b)
-  {
-    console.log("Enter the a")
-    return a;
-  }
-  else
-  {
-    console.log("Enter the b")
-    return b;
-  }
+  reverse = reverse+name[i]
 }
-console.log(name(10,12))
+console.log(reverse)
