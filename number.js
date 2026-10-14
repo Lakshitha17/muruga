@@ -733,13 +733,25 @@
 // console.log(max)
 
 //68.array using smallest number
-arr = [10,20,30,40,50]
-let min = arr[0]
+// arr = [10,20,30,40,50]
+// let min = arr[0]
+// for(let i=0;i<arr.length;i++)
+// {
+//   if(arr[i]<min)
+//   {
+//     min = arr[i]
+//   }
+// }
+// console.log(min)
+
+//69.calculte the sum of the elements in array
+let arr = [1,2,3,4,5]
+let sum = 0;
 for(let i=0;i<arr.length;i++)
 {
-  if(arr[i]<min)
+  if(arr[i]<=5)
   {
-    min = arr[i]
+    sum = sum+arr[i]
   }
 }
-console.log(min)
+console.log(sum)
