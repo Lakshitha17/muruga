@@ -856,16 +856,30 @@
 // console.log(sum);
 
 //77.merge of 2 array
-let arr1=[1,2,3,4,5]
-let arr2=[6,7,8,9,10]
-let merge = []
-for(let i=0;i<arr1.length;i++)
-{
-  merge.push(arr1[i])
-}
-for(let i=0;i<arr2.length;i++)
+// let arr1=[1,2,3,4,5]
+// let arr2=[6,7,8,9,10]
+// let merge = []
+// for(let i=0;i<arr1.length;i++)
+// {
+//   merge.push(arr1[i])
+// }
+// for(let i=0;i<arr2.length;i++)
 
+// {
+//   merge.push(arr2[i])
+// }
+// console.log(merge)
+
+//78.2nd largest number find
+let lak = [1,2,3,4,5,6]
+let large = lak[0]
+let second = lak[0]
+for(let i=0;i<lak.length;i++)
 {
-  merge.push(arr2[i])
+  if(lak[i]>large)
+  {
+    second = large
+    large = lak[i]
+  }
 }
-console.log(merge)
+console.log(second)
