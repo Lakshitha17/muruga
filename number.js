@@ -826,7 +826,7 @@
 // console.log(result)
 
 
-//75.duplicate remove anither method to use
+ //75.duplicate remove anither method to use
 let arr = [1,2,2,3,4,4,5]
 let newarr = []
 for(let i=0;i<arr.length;i++){
