@@ -871,15 +871,29 @@
 // console.log(merge)
 
 //78.2nd largest number find
-let lak = [1,2,3,4,5,6]
-let large = lak[0]
-let second = lak[0]
-for(let i=0;i<lak.length;i++)
-{
-  if(lak[i]>large)
-  {
-    second = large
-    large = lak[i]
-  }
+// let lak = [1,2,3,4,5,6]
+// let large = lak[0]
+// let second = lak[0]
+// for(let i=0;i<lak.length;i++)
+// {
+//   if(lak[i]>large)
+//   {
+//     second = large
+//     large = lak[i]
+//   }
+// }
+// console.log(second)
+
+//79.move 0 at the end
+
+let arr = [1, 0, 2, 0, 3, 4];
+let result = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+        result.push(arr[i]);
+    }
 }
-console.log(second)
+while (result.length < arr.length) {
+    result.push(0);
+}
+console.log(result);
