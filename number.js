@@ -827,20 +827,30 @@
 
 
  //75.duplicate remove anither method to use
-let arr = [1,2,2,3,4,4,5]
-let newarr = []
-for(let i=0;i<arr.length;i++){
-  let isduplicate = false
+// let arr = [1,2,2,3,4,4,5]
+// let newarr = []
+// for(let i=0;i<arr.length;i++){
+//   let isduplicate = false
 
- for(let j=0;j<newarr.length;j++){
-   if(arr[i] === newarr[j]){
-     isduplicate = true
-     break
-   }
- }
+//  for(let j=0;j<newarr.length;j++){
+//    if(arr[i] === newarr[j]){
+//      isduplicate = true
+//      break
+//    }
+//  }
   
-  if(! isduplicate){
-    newarr.push(arr[i])
-  }
+//   if(! isduplicate){
+//     newarr.push(arr[i])
+//   }
+// }
+// console.log(newarr)
+
+//76.Sum of numbers divisible by 3
+let arr = [3, 5, 6, 8, 9, 12, 14];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 3 === 0) {
+        sum = sum + arr[i];
+    }
 }
-console.log(newarr)
+console.log(sum);
