@@ -846,11 +846,26 @@
 // console.log(newarr)
 
 //76.Sum of numbers divisible by 3
-let arr = [3, 5, 6, 8, 9, 12, 14];
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 3 === 0) {
-        sum = sum + arr[i];
-    }
+// let arr = [3, 5, 6, 8, 9, 12, 14];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 3 === 0) {
+//         sum = sum + arr[i];
+//     }
+// }
+// console.log(sum);
+
+//77.merge of 2 array
+let arr1=[1,2,3,4,5]
+let arr2=[6,7,8,9,10]
+let merge = []
+for(let i=0;i<arr1.length;i++)
+{
+  merge.push(arr1[i])
 }
-console.log(sum);
+for(let i=0;i<arr2.length;i++)
+
+{
+  merge.push(arr2[i])
+}
+console.log(merge)
