@@ -906,3 +906,15 @@ for(let i=0;i<k;i++)
   arr1.unshift(last)
 }
 console.log(arr1)
+
+//81.shift of the right 3 elemnt
+let arr1 = [1,2,3,4,5,6,7,8]
+let k = 3
+for(let i=0;i<k;i++)
+{
+  let first = arr1.shift()
+  arr1.push(first)
+}
+console.log(arr1)
+
+
