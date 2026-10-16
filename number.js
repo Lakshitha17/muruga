@@ -917,4 +917,11 @@ for(let i=0;i<k;i++)
 }
 console.log(arr1)
 
-
+//82.Right rotate an array by 1 position
+let arr = [1, 2, 3, 4, 5];
+let k = 1;
+for (let i = 0; i < k; i++) {
+    let last = arr.pop();
+    arr.unshift(last);
+}
+console.log(arr);
