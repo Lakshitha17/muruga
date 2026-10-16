@@ -885,15 +885,25 @@
 // console.log(second)
 
 //79.move 0 at the end
+// let arr = [1, 0, 2, 0, 3, 4];
+// let result = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== 0) {
+//         result.push(arr[i]);
+//     }
+// }
+// while (result.length < arr.length) {
+//     result.push(0);
+// }
+// console.log(result);
 
-let arr = [1, 0, 2, 0, 3, 4];
-let result = [];
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== 0) {
-        result.push(arr[i]);
-    }
+//80.shift of the left 3 element
+let arr1 = [1,2,3,4,5,6,7,8]
+let k = 3
+for(let i=0;i<k;i++)
+{
+  let last = arr1.pop()
+  arr1.unshift(last)
 }
-while (result.length < arr.length) {
-    result.push(0);
-}
-console.log(result);
+console.log(arr1)
+
