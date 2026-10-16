@@ -898,12 +898,13 @@
 // console.log(result);
 
 //80.shift of the left 3 element
-let arr1 = [1,2,3,4,5,6,7,8]
-let k = 3
-for(let i=0;i<k;i++)
-{
-  let last = arr1.pop()
-  arr1.unshift(last)
-}
-console.log(arr1)
+// let arr1 = [1,2,3,4,5,6,7,8]
+// let k = 3
+// for(let i=0;i<k;i++)
+// {
+//   let last = arr1.pop()
+//   arr1.unshift(last)
+// }
+// console.log(arr1)
 
+notepad number.js
