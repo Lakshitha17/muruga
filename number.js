@@ -959,18 +959,33 @@
 // console.log("Union:", union);
 
 //83.union of 2 arrays
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [3, 4, 5, 6, 7];
+// let union = [];
+// for (let i = 0; i < arr1.length; i++) {
+//     if (!union.includes(arr1[i])) {
+//         union.push(arr1[i]);
+//     }
+// }
+// for (let i = 0; i < arr2.length; i++) {
+//     if (!union.includes(arr2[i])) {
+//         union.push(arr2[i]);
+//     }
+// }
+// console.log("Union:", union);
+
+//84.intersection of 2 arrays
 
 let arr1 = [1, 2, 3, 4, 5];
 let arr2 = [3, 4, 5, 6, 7];
-let union = [];
+let intersection = [];
 for (let i = 0; i < arr1.length; i++) {
-    if (!union.includes(arr1[i])) {
-        union.push(arr1[i]);
+    for (let j = 0; j < arr2.length; j++) {
+        if (arr1[i] === arr2[j]) {
+            if (!intersection.includes(arr1[i])) {
+                intersection.push(arr1[i]);
+            }
+        }
     }
 }
-for (let i = 0; i < arr2.length; i++) {
-    if (!union.includes(arr2[i])) {
-        union.push(arr2[i]);
-    }
-}
-console.log("Union:", union);
+console.log("Intersection:", intersection);
