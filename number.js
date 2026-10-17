@@ -927,34 +927,50 @@
 // console.log(arr);
 
 //82.union and intersection
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [3, 4, 5, 6, 7];
+// let union = [];
+// let common = [];
+// let inarr1 = {};
+// let inunion = {};
+// // First array
+// for (let i = 0; i < arr1.length; i++) {
+//     inarr1[arr1[i]] = true;
+
+//     if (!inunion[arr1[i]]) {
+//         union.push(arr1[i]);
+//         inunion[arr1[i]] = true;
+//     }
+// }
+// // Second array
+// for (let i = 0; i < arr2.length; i++) {
+//     if (inarr1[arr2[i]]) {
+//         common.push(arr2[i]);
+//         inarr1[arr2[i]] = false;
+//     }
+
+//     if (!inunion[arr2[i]]) {
+//         union.push(arr2[i]);
+//         inunion[arr2[i]] = true;
+//     }
+// }
+
+// console.log("Intersection:", common);
+// console.log("Union:", union);
+
+//83.union of 2 arrays
+
 let arr1 = [1, 2, 3, 4, 5];
 let arr2 = [3, 4, 5, 6, 7];
 let union = [];
-let common = [];
-let inarr1 = {};
-let inunion = {};
-// First array
 for (let i = 0; i < arr1.length; i++) {
-    inarr1[arr1[i]] = true;
-
-    if (!inunion[arr1[i]]) {
+    if (!union.includes(arr1[i])) {
         union.push(arr1[i]);
-        inunion[arr1[i]] = true;
     }
 }
-// Second array
 for (let i = 0; i < arr2.length; i++) {
-    if (inarr1[arr2[i]]) {
-        common.push(arr2[i]);
-        inarr1[arr2[i]] = false;
-    }
-
-    if (!inunion[arr2[i]]) {
+    if (!union.includes(arr2[i])) {
         union.push(arr2[i]);
-        inunion[arr2[i]] = true;
     }
 }
-
-console.log("Intersection:", common);
 console.log("Union:", union);
-
