@@ -898,30 +898,63 @@
 // console.log(result);
 
 //80.shift of the left 3 element
-let arr1 = [1,2,3,4,5,6,7,8]
-let k = 3
-for(let i=0;i<k;i++)
-{
-  let last = arr1.pop()
-  arr1.unshift(last)
-}
-console.log(arr1)
+// let arr1 = [1,2,3,4,5,6,7,8]
+// let k = 3
+// for(let i=0;i<k;i++)
+// {
+//   let last = arr1.pop()
+//   arr1.unshift(last)
+// }
+// console.log(arr1)
 
 //81.shift of the right 3 elemnt
-let arr1 = [1,2,3,4,5,6,7,8]
-let k = 3
-for(let i=0;i<k;i++)
-{
-  let first = arr1.shift()
-  arr1.push(first)
-}
-console.log(arr1)
+// let arr1 = [1,2,3,4,5,6,7,8]
+// let k = 3
+// for(let i=0;i<k;i++)
+// {
+//   let first = arr1.shift()
+//   arr1.push(first)
+// }
+// console.log(arr1)
 
-//82.Right rotate an array by 1 position
-let arr = [1, 2, 3, 4, 5];
-let k = 1;
-for (let i = 0; i < k; i++) {
-    let last = arr.pop();
-    arr.unshift(last);
+// //82.Right rotate an array by 1 position
+// let arr = [1, 2, 3, 4, 5];
+// let k = 1;
+// for (let i = 0; i < k; i++) {
+//     let last = arr.pop();
+//     arr.unshift(last);
+// }
+// console.log(arr);
+
+//82.union and intersection
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [3, 4, 5, 6, 7];
+let union = [];
+let common = [];
+let inarr1 = {};
+let inunion = {};
+// First array
+for (let i = 0; i < arr1.length; i++) {
+    inarr1[arr1[i]] = true;
+
+    if (!inunion[arr1[i]]) {
+        union.push(arr1[i]);
+        inunion[arr1[i]] = true;
+    }
 }
-console.log(arr);
+// Second array
+for (let i = 0; i < arr2.length; i++) {
+    if (inarr1[arr2[i]]) {
+        common.push(arr2[i]);
+        inarr1[arr2[i]] = false;
+    }
+
+    if (!inunion[arr2[i]]) {
+        union.push(arr2[i]);
+        inunion[arr2[i]] = true;
+    }
+}
+
+console.log("Intersection:", common);
+console.log("Union:", union);
+
