@@ -990,16 +990,29 @@
 // console.log("Intersection:", intersection);
 
 //85.intersection
-let arr1 = [1, 2, 3];
-let arr2 = [2, 3, 4];
+// let arr1 = [1, 2, 3];
+// let arr2 = [2, 3, 4];
+// let intersection = [];
+// for (let i = 0; i < arr1.length; i++) {
+//     if (arr1.includes(arr2[i])) {
+//         intersection.push(arr2[i]);
+//     }
+// }
+// console.log("Intersection:", intersection);
 
-let intersection = [];
-
+//86.union
+let arr1 = [1, 2, 3, 4];
+let arr2 = [3, 4, 5, 6];
+let union = [];
 for (let i = 0; i < arr1.length; i++) {
-    if (arr1.includes(arr2[i])) {
-        intersection.push(arr2[i]);
+    if (!union.includes(arr1[i])) {
+        union.push(arr1[i]);
     }
 }
-
-console.log("Intersection:", intersection);
+for (let i = 0; i < arr2.length; i++) {
+    if (!union.includes(arr2[i])) {
+        union.push(arr2[i]);
+    }
+}
+console.log("Union:", union);
 
