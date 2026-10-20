@@ -1017,12 +1017,29 @@
 // console.log("Union:", union);
 
 //87.count occurance
-let arr = [1, 2, 2, 3, 2, 4];
-let target = 2;
-let count = 0;
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-        count++;
-    }
+// let arr = [1, 2, 2, 3, 2, 4];
+// let target = 2;
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === target) {
+//         count++;
+//     }
+// }
+// console.log(count)
+
+//88.medianof the sorted array
+et num1 = [1,3]
+let num2 = [2]
+let arr = num1.concat(num2)
+arr.sort((a,b)=>a-b)
+let median
+let n = arr.length
+if(n%2==1)
+{
+  let median = arr[parseInt(n/2)]
 }
-console.log(count)
+else
+{
+  let median = (arr[n/2-1]+[n/2])/2
+}
+ console.log(arr)
