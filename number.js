@@ -1028,7 +1028,7 @@
 // console.log(count)
 
 //88.medianof the sorted array
-et num1 = [1,3]
+let num1 = [1,3]
 let num2 = [2]
 let arr = num1.concat(num2)
 arr.sort((a,b)=>a-b)
