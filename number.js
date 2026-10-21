@@ -1045,27 +1045,45 @@
 //  console.log(arr)
 
 //89.three number sum is come 0
-var nums = [-1, 0, 1, 2, -1, -4];
-nums.sort(function(a, b) {
-    return a - b;
-});
-var result = [];
-for (var i = 0; i < nums.length - 2; i++) {
-    var left = i + 1;
-    var right = nums.length - 1;
-    while (left < right) {
-        var sum = nums[i] + nums[left] + nums[right];
-        if (sum === 0) {
-            result.push([nums[i], nums[left], nums[right]]);
-            left++;
-            right--;
-        }
-        else if (sum < 0) {
-            left++;
-        }
-        else {
-            right--;
-        }
+// var nums = [-1, 0, 1, 2, -1, -4];
+// nums.sort(function(a, b) {
+//     return a - b;
+// });
+// var result = [];
+// for (var i = 0; i < nums.length - 2; i++) {
+//     var left = i + 1;
+//     var right = nums.length - 1;
+//     while (left < right) {
+//         var sum = nums[i] + nums[left] + nums[right];
+//         if (sum === 0) {
+//             result.push([nums[i], nums[left], nums[right]]);
+//             left++;
+//             right--;
+//         }
+//         else if (sum < 0) {
+//             left++;
+//         }
+//         else {
+//             right--;
+//         }
+//     }
+// }
+// console.log(result);
+
+//90.another way to 3 sum problem
+let arr = [-1, 0, 1, 2, -1, -4]
+for(let i=0;i<arr.length;i++)
+{
+  for(let j=i+1;j<arr.length;j++)
+  {
+    for(let k = j+1;j<arr.length;k++)
+    {
+    let sum = arr[i]+arr[j]+arr[k]
+    if(sum===0)
+    {
+      console.log([arr[i],arr[j],arr[k]])
+      console.log("Add the results:",arr[i]+arr[j]+arr[k])
     }
+  }
 }
-console.log(result);
+}
