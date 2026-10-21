@@ -1028,18 +1028,44 @@
 // console.log(count)
 
 //88.medianof the sorted array
-let num1 = [1,3]
-let num2 = [2]
-let arr = num1.concat(num2)
-arr.sort((a,b)=>a-b)
-let median
-let n = arr.length
-if(n%2==1)
-{
-  let median = arr[parseInt(n/2)]
+// let num1 = [1,3]
+// let num2 = [2]
+// let arr = num1.concat(num2)
+// arr.sort((a,b)=>a-b)
+// let median
+// let n = arr.length
+// if(n%2==1)
+// {
+//   let median = arr[parseInt(n/2)]
+// }
+// else
+// {
+//   let median = (arr[n/2-1]+[n/2])/2
+// }
+//  console.log(arr)
+
+//89.three number sum is come 0
+var nums = [-1, 0, 1, 2, -1, -4];
+nums.sort(function(a, b) {
+    return a - b;
+});
+var result = [];
+for (var i = 0; i < nums.length - 2; i++) {
+    var left = i + 1;
+    var right = nums.length - 1;
+    while (left < right) {
+        var sum = nums[i] + nums[left] + nums[right];
+        if (sum === 0) {
+            result.push([nums[i], nums[left], nums[right]]);
+            left++;
+            right--;
+        }
+        else if (sum < 0) {
+            left++;
+        }
+        else {
+            right--;
+        }
+    }
 }
-else
-{
-  let median = (arr[n/2-1]+[n/2])/2
-}
- console.log(arr)
+console.log(result);
