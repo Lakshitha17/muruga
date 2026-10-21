@@ -1071,19 +1071,37 @@
 // console.log(result);
 
 //90.another way to 3 sum problem
-let arr = [-1, 0, 1, 2, -1, -4]
-for(let i=0;i<arr.length;i++)
-{
-  for(let j=i+1;j<arr.length;j++)
-  {
-    for(let k = j+1;j<arr.length;k++)
-    {
-    let sum = arr[i]+arr[j]+arr[k]
-    if(sum===0)
-    {
-      console.log([arr[i],arr[j],arr[k]])
-      console.log("Add the results:",arr[i]+arr[j]+arr[k])
+// let arr = [-1, 0, 1, 2, -1, -4]
+// for(let i=0;i<arr.length;i++)
+// {
+//   for(let j=i+1;j<arr.length;j++)
+//   {
+//     for(let k = j+1;j<arr.length;k++)
+//     {
+//     let sum = arr[i]+arr[j]+arr[k]
+//     if(sum===0)
+//     {
+//       console.log([arr[i],arr[j],arr[k]])
+//       console.log("Add the results:",arr[i]+arr[j]+arr[k])
+//     }
+//   }
+// }
+// }
+
+//91.find the largest consiqutive number
+var nums = [100, 4, 200, 1, 3, 2];
+var set = nums;
+var max = 0;
+for (var i = 0; i < nums.length; i++) {
+    var num = nums[i];
+    if (set.includes(num - 1)) {
+        continue;
     }
-  }
+    var currLength = 0;
+    while (set.includes(num)) {
+        currLength++;
+        num++;
+    }
+    max = Math.max(max, currLength);
 }
-}
+console.log(max);
