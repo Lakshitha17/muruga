@@ -1089,19 +1089,34 @@
 // }
 
 //91.find the largest consiqutive number
-var nums = [100, 4, 200, 1, 3, 2];
-var set = nums;
-var max = 0;
-for (var i = 0; i < nums.length; i++) {
-    var num = nums[i];
-    if (set.includes(num - 1)) {
+// var nums = [100, 4, 200, 1, 3, 2];
+// var set = nums;
+// var max = 0;
+// for (var i = 0; i < nums.length; i++) {
+//     var num = nums[i];
+//     if (set.includes(num - 1)) {
+//         continue;
+//     }
+//     var currLength = 0;
+//     while (set.includes(num)) {
+//         currLength++;
+//         num++;
+//     }
+//     max = Math.max(max, currLength);
+// }
+// console.log(max);
+
+//92.stock buy and sell optimization
+
+var prices = [7, 1, 5, 3, 6, 4];
+var profit = 0;
+var buying_price = prices[0];
+for (var i = 1; i < prices.length; i++) {
+
+    if (prices[i] <= buying_price) {
+        buying_price = prices[i];
         continue;
     }
-    var currLength = 0;
-    while (set.includes(num)) {
-        currLength++;
-        num++;
-    }
-    max = Math.max(max, currLength);
+    profit = Math.max(profit, prices[i] - buying_price);
 }
-console.log(max);
+console.log(profit);
