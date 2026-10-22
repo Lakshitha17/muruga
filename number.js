@@ -1108,15 +1108,31 @@
 
 //92.stock buy and sell optimization
 
-var prices = [7, 1, 5, 3, 6, 4];
-var profit = 0;
-var buying_price = prices[0];
-for (var i = 1; i < prices.length; i++) {
+// var prices = [7, 1, 5, 3, 6, 4];
+// var profit = 0;
+// var buying_price = prices[0];
+// for (var i = 1; i < prices.length; i++) {
 
-    if (prices[i] <= buying_price) {
-        buying_price = prices[i];
-        continue;
+//     if (prices[i] <= buying_price) {
+//         buying_price = prices[i];
+//         continue;
+//     }
+//     profit = Math.max(profit, prices[i] - buying_price);
+// }
+// console.log(profit);
+
+//93.Count the Frequency of Each Character
+var str = "hello";
+var count = {};
+
+for (var i = 0; i < str.length; i++) {
+    var ch = str[i];
+
+    if (count[ch]) {
+        count[ch]++;
+    } else {
+        count[ch] = 1;
     }
-    profit = Math.max(profit, prices[i] - buying_price);
 }
-console.log(profit);
+
+console.log(count);
