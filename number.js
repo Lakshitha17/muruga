@@ -1122,17 +1122,29 @@
 // console.log(profit);
 
 //93.Count the Frequency of Each Character
-var str = "hello";
-var count = {};
+// var str = "hello";
+// var count = {};
+
+// for (var i = 0; i < str.length; i++) {
+//     var ch = str[i];
+
+//     if (count[ch]) {
+//         count[ch]++;
+//     } else {
+//         count[ch] = 1;
+//     }
+// }
+
+// console.log(count);
+
+//94.Remove Duplicate Characters
+var str = "programming";
+var result = "";
 
 for (var i = 0; i < str.length; i++) {
-    var ch = str[i];
-
-    if (count[ch]) {
-        count[ch]++;
-    } else {
-        count[ch] = 1;
+    if (!result.includes(str[i])) {
+        result = result + str[i];
     }
 }
 
-console.log(count);
+console.log(result);
