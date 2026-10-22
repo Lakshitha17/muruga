@@ -1138,13 +1138,22 @@
 // console.log(count);
 
 //94.Remove Duplicate Characters
-var str = "programming";
-var result = "";
+// var str = "programming";
+// var result = "";
+// for (var i = 0; i < str.length; i++) {
+//     if (!result.includes(str[i])) {
+//         result = result + str[i];
+//     }
+// }
+// console.log(result);
 
-for (var i = 0; i < str.length; i++) {
-    if (!result.includes(str[i])) {
-        result = result + str[i];
+//95.Find the Longest Word in a String
+var str = "I love learning JavaScript";
+var words = str.split(" ");
+var longest = "";
+for (var i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+        longest = words[i];
     }
 }
-
-console.log(result);
+console.log("Longest word:", longest);
