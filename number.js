@@ -1166,9 +1166,16 @@
 // greeting()
 
 //97. function decleration
-function add (a,b)
+// function add (a,b)
+// {
+//   return a+b
+//   return a*b
+// }
+// console.log(add(10,20))
+
+//98.function expression
+let add = function(a,b)
 {
-  return a+b
-  return a*b
+  return a/b
 }
 console.log(add(10,20))
