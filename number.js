@@ -1148,12 +1148,19 @@
 // console.log(result);
 
 //95.Find the Longest Word in a String
-var str = "I love learning JavaScript";
-var words = str.split(" ");
-var longest = "";
-for (var i = 0; i < words.length; i++) {
-    if (words[i].length > longest.length) {
-        longest = words[i];
-    }
+// var str = "I love learning JavaScript";
+// var words = str.split(" ");
+// var longest = "";
+// for (var i = 0; i < words.length; i++) {
+//     if (words[i].length > longest.length) {
+//         longest = words[i];
+//     }
+// }
+// console.log("Longest word:", longest);
+
+//96.function decleration
+function greeting()
+{
+    console.log("Hello world")
 }
-console.log("Longest word:", longest);
+greeting()
