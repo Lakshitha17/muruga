@@ -1159,8 +1159,16 @@
 // console.log("Longest word:", longest);
 
 //96.function decleration
-function greeting()
+// function greeting()
+// {
+//     console.log("Hello world")
+// }
+// greeting()
+
+//97. function decleration
+function add (a,b)
 {
-    console.log("Hello world")
+  return a+b
+  return a*b
 }
-greeting()
+console.log(add(10,20))
