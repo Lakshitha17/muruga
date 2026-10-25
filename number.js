@@ -1180,10 +1180,19 @@
 // }
 // console.log(add(10,20))
 
-let add = function()
-{
-  console.log("Hello world")
-}
-add()
+// let add = function()
+// {
+//   console.log("Hello world")
+// }
+// add()
 
 //99.arrow function
+let add = (a,b)=>
+{
+    return a+b
+}
+console.log(add(10,20))
+let hello = (a,b)=>a+b
+console.log(hello(10,20))  
+
+
