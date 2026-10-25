@@ -1174,8 +1174,16 @@
 // console.log(add(10,20))
 
 //98.function expression
-let add = function(a,b)
+// let add = function(a,b)
+// {
+//   return a/b
+// }
+// console.log(add(10,20))
+
+let add = function()
 {
-  return a/b
+  console.log("Hello world")
 }
-console.log(add(10,20))
+add()
+
+//99.arrow function
