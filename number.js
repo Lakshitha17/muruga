@@ -1187,12 +1187,23 @@
 // add()
 
 //99.arrow function
-let add = (a,b)=>
+// let add = (a,b)=>
+// {
+//     return a+b
+// }
+// console.log(add(10,20))
+// let hello = (a,b)=>a+b
+// console.log(hello(10,20))
+
+//100.arrow function
+function addition (a,b)
 {
-    return a+b
+  console.log(a+b)
 }
-console.log(add(10,20))
-let hello = (a,b)=>a+b
-console.log(hello(10,20))  
+function hello (callback)
+{
+  callback(10,20)
+}
+hello(addition)
 
 
