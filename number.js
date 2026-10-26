@@ -1196,14 +1196,17 @@
 // console.log(hello(10,20))
 
 //100.arrow function
-function addition (a,b)
-{
-  console.log(a+b)
-}
-function hello (callback)
-{
-  callback(10,20)
-}
-hello(addition)
+// function addition (a,b)
+// {
+//   console.log(a+b)
+// }
+// function hello (callback)
+// {
+//   callback(10,20)
+// }
+// hello(addition)
 
-
+//101.map using simple prog
+let number = [10,20,30,40,50,60]
+let happy = number.map(i=>i+10) //i represnt the current element
+console.log(happy)
