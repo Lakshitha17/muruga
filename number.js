@@ -1219,13 +1219,30 @@
 //                        })
 // console.log(happy)
 
-//103.callback
-function divya()
+//103.callback //it is used for call the 1st function using the 2nd function as the parameter
+// function divya()
+// {
+//   console.log("hello java")
+// }
+// function laks(callback)
+// {
+//   callback()
+// }
+// laks(divya)
+
+//104.constructor
+class Number
 {
-  console.log("hello java")
+  constructor(name,age)
+  {
+    this.name = name;
+    this.age = age;
+  }
+  display()
+  {
+    console.log(this.name)
+    console.log(this.age)
+  }
 }
-function laks(callback)
-{
-  callback()
-}
-laks(divya)
+  const h1 = new Number("lakshitha",18)
+h1.display()
