@@ -1212,9 +1212,20 @@
 // console.log(happy)
 
 //102.map usnig the next level prog
-let number = [10,20,30,40,50,60]
-let happy = number.map(function(lak)
-                       {
-                         return lak*10
-                       })
-console.log(happy)
+// let number = [10,20,30,40,50,60]
+// let happy = number.map(function(lak)
+//                        {
+//                          return lak*10
+//                        })
+// console.log(happy)
+
+//103.callback
+function divya()
+{
+  console.log("hello java")
+}
+function laks(callback)
+{
+  callback()
+}
+laks(divya)
