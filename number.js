@@ -1231,18 +1231,27 @@
 // laks(divya)
 
 //104.constructor
-class Number
-{
-  constructor(name,age)
-  {
-    this.name = name;
-    this.age = age;
-  }
-  display()
-  {
-    console.log(this.name)
-    console.log(this.age)
-  }
-}
-  const h1 = new Number("lakshitha",18)
-h1.display()
+// class Number
+// {
+//   constructor(name,age)
+//   {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   display()
+//   {
+//     console.log(this.name)
+//     console.log(this.age)
+//   }
+// }
+//   const h1 = new Number("lakshitha",18)
+// h1.display()
+
+//105 push the empty array the elements
+let numbers = []
+numbers.push(10)
+numbers.push(20)
+numbers.push(30)
+numbers.push(40)
+numbers.push(50)
+console.log(numbers)
