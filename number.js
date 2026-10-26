@@ -1207,6 +1207,14 @@
 // hello(addition)
 
 //101.map using simple prog
+// let number = [10,20,30,40,50,60]
+// let happy = number.map(i=>i+10) //i represnt the current element
+// console.log(happy)
+
+//102.map usnig the next level prog
 let number = [10,20,30,40,50,60]
-let happy = number.map(i=>i+10) //i represnt the current element
+let happy = number.map(function(lak)
+                       {
+                         return lak*10
+                       })
 console.log(happy)
