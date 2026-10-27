@@ -1266,18 +1266,30 @@
 // console.log(dhan)
 
 //107 class oda problem
-class Lakshitha
-{
-  name = " "
-  address = " "
-  showdata()
-  {
-    console.log(this.name)
-    console.log(this.address)
-  }
-}
-const h1 = new Lakshitha()
-h1.name ="lakshitha"
-h1.address = "madurai"
-h1.showdata()
+// class Lakshitha
+// {
+//   name = " "
+//   address = " "
+//   showdata()
+//   {
+//     console.log(this.name)
+//     console.log(this.address)
+//   }
+// }
+// const h1 = new Lakshitha()
+// h1.name ="lakshitha"
+// h1.address = "madurai"
+// h1.showdata()
 
+//108 Find Employee ID
+let id = 102;
+
+if (id == 101) {
+    console.log("Seyon");
+}
+else if (id == 102) {
+    console.log("Ram");
+}
+else {
+    console.log("Invalid ID");
+}
