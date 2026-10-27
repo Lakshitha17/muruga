@@ -1293,3 +1293,43 @@ else if (id == 102) {
 else {
     console.log("Invalid ID");
 }
+
+//109. find the unique employee id find
+class Employee
+{
+  constructor(id,name,age,salary)
+  {
+    this.id = id
+    this.name = name
+    this.age = age
+    this.salary = salary
+  }
+  showdata()
+  {
+    console.log(this.id)
+    console.log(this.name)
+    console.log(this.age)
+    console.log(this.salary)
+  }
+}
+const e1 = new Employee(101,"seyon",17,100000)
+const e2 = new Employee(102,"chottu",23,700000)
+const e3 = new Employee(103,"ajith",25,600000)
+const e4 = new Employee(104,"vijay",26,500000)
+let employee = [e1,e2,e3,e4]
+let empid = parseInt(prompt("Enter the id:"))
+let isnotmatch = false
+for(let i=0;i<employee.length;i++)
+{
+  if(employee[i].id === empid)
+  {
+    employee[i].showdata()
+    isnotmatch = true
+  }
+}
+if(isnotmatch === false )
+{
+  console.log("Invalid Employee id")
+}
+
+
