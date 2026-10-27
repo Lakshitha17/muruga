@@ -1248,10 +1248,36 @@
 // h1.display()
 
 //105 push the empty array the elements
-let numbers = []
-numbers.push(10)
-numbers.push(20)
-numbers.push(30)
-numbers.push(40)
-numbers.push(50)
-console.log(numbers)
+// let numbers = []
+// numbers.push(10)
+// numbers.push(20)
+// numbers.push(30)
+// numbers.push(40)
+// numbers.push(50)
+// console.log(numbers)
+
+//106 push the number
+// let dhan = [5,10,17,11]
+// dhan.pop(5)
+// dhan.pop(10)
+// dhan.pop(17)
+// dhan.pop(11)
+// dhan.push(200)
+// console.log(dhan)
+
+//107 class oda problem
+class Lakshitha
+{
+  name = " "
+  address = " "
+  showdata()
+  {
+    console.log(this.name)
+    console.log(this.address)
+  }
+}
+const h1 = new Lakshitha()
+h1.name ="lakshitha"
+h1.address = "madurai"
+h1.showdata()
+
