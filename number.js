@@ -1356,7 +1356,38 @@ else {
 // h3.lak()
 
 111.//find the employee details using the for loop
-class Student
+// class Student
+//   {
+//   constructor(name,id,mark)
+//   {
+//     this.name = name;
+//     this.id = id;
+//     this.mark = mark;
+//   }
+
+//   showdata()
+//   {
+//     console.log("Name: " + this.name);
+//     console.log("ID: " + this.id);
+//     console.log("Mark: " + this.mark);
+//   }
+// }
+
+// const s1 = new Student("Arun", 101, 85);
+// const s2 = new Student("Priya", 102, 90);
+// const s3 = new Student("Kavin", 103, 95);
+
+// let students = [s1, s2, s3];
+
+// for (let i = 0; i < students.length; i++)
+// {
+//   console.log("Student " + (i + 1));
+//   students[i].showdata();
+//   console.log("");
+// }
+
+//112.enter the name of the string
+ class Student
   {
   constructor(name,id,mark)
   {
@@ -1364,7 +1395,6 @@ class Student
     this.id = id;
     this.mark = mark;
   }
-
   showdata()
   {
     console.log("Name: " + this.name);
@@ -1372,16 +1402,23 @@ class Student
     console.log("Mark: " + this.mark);
   }
 }
-
 const s1 = new Student("Arun", 101, 85);
 const s2 = new Student("Priya", 102, 90);
 const s3 = new Student("Kavin", 103, 95);
-
-let students = [s1, s2, s3];
-
-for (let i = 0; i < students.length; i++)
+let lak = prompt("Enter the name:")
+let empid = [s1,s2,s3]
+let isnottrue = false
+for(let i=0;i<empid.length;i++)
 {
-  console.log("Student " + (i + 1));
-  students[i].showdata();
-  console.log("");
+  if(empid[i].name === lak)
+  {
+    empid[i].showdata()
+   isnottrue = true
+  console.log("")
+}
+}
+if(isnottrue === false)
+{
+  console.log("Invalid employee name:")
+  console.log("")
 }
