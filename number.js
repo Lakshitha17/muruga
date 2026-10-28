@@ -1294,7 +1294,7 @@ else {
     console.log("Invalid ID");
 }
 
-//109. find the unique employee id find
+//109. find the employee details using the method name
 // class Employee
 // {
 //   constructor(id,name,age,salary)
@@ -1333,24 +1333,55 @@ else {
 // }
 
 //110.normal datas print pannanum
+// class Student
+// {
+//   constructor(name,id,mark)
+//   {
+//     this.name = name
+//     this.id = id
+//     this.mark = mark
+//   }
+//   lak()
+//   {
+//     console.log(this.name)
+//     console.log(this.id)
+//     console.log(this.mark)
+//   }
+// }
+// const h1 = new Student("hello",101,90)
+// const h2 = new Student("lebi",102,100)
+// const h3 = new Student("subi",103,98)
+// h1.lak()
+// h2.lak()
+// h3.lak()
+
+111.//find the employee details using the for loop
 class Student
-{
+  {
   constructor(name,id,mark)
   {
-    this.name = name
-    this.id = id
-    this.mark = mark
+    this.name = name;
+    this.id = id;
+    this.mark = mark;
   }
-  lak()
+
+  showdata()
   {
-    console.log(this.name)
-    console.log(this.id)
-    console.log(this.mark)
+    console.log("Name: " + this.name);
+    console.log("ID: " + this.id);
+    console.log("Mark: " + this.mark);
   }
 }
-const h1 = new Student("hello",101,90)
-const h2 = new Student("lebi",102,100)
-const h3 = new Student("subi",103,98)
-h1.lak()
-h2.lak()
-h3.lak()
+
+const s1 = new Student("Arun", 101, 85);
+const s2 = new Student("Priya", 102, 90);
+const s3 = new Student("Kavin", 103, 95);
+
+let students = [s1, s2, s3];
+
+for (let i = 0; i < students.length; i++)
+{
+  console.log("Student " + (i + 1));
+  students[i].showdata();
+  console.log("");
+}
