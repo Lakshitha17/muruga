@@ -1332,4 +1332,25 @@ if(isnotmatch === false )
   console.log("Invalid Employee id")
 }
 
-
+//110.normal datas print pannanum
+class Student
+{
+  constructor(name,id,mark)
+  {
+    this.name = name
+    this.id = id
+    this.mark = mark
+  }
+  lak()
+  {
+    console.log(this.name)
+    console.log(this.id)
+    console.log(this.mark)
+  }
+}
+const h1 = new Student("hello",101,90)
+const h2 = new Student("lebi",102,100)
+const h3 = new Student("subi",103,98)
+h1.lak()
+h2.lak()
+h3.lak()
