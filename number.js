@@ -1424,39 +1424,45 @@ else {
 // }
 
 //112.delete the name in the students detail
-class Student
-  {
-  constructor(name,id,mark)
-  {
-    this.name = name;
-    this.id = id;
-    this.mark = mark;
-  }
-  showdata()
-  {
-    console.log("Name:" + this.name);
-    console.log("ID:" + this.id);
-    console.log("Mark:" + this.mark);
-  }
-}
-const s1 = new Student("Arun", 101, 85);
-const s2 = new Student("Priya", 102, 90);
-const s3 = new Student("Kavin", 103, 95);
-let lak = prompt("Enter the name:")
-let empid = [s1,s2,s3]
-let isnottrue = false
-for(let i=0;i<empid.length;i++)
+// class Student
+//   {
+//   constructor(name,id,mark)
+//   {
+//     this.name = name;
+//     this.id = id;
+//     this.mark = mark;
+//   }
+//   showdata()
+//   {
+//     console.log("Name:" + this.name);
+//     console.log("ID:" + this.id);
+//     console.log("Mark:" + this.mark);
+//   }
+// }
+// const s1 = new Student("Arun", 101, 85);
+// const s2 = new Student("Priya", 102, 90);
+// const s3 = new Student("Kavin", 103, 95);
+// let lak = prompt("Enter the name:")
+// let empid = [s1,s2,s3]
+// let isnottrue = false
+// for(let i=0;i<empid.length;i++)
+// {
+//   if(empid[i].name === lak)
+//     empid.splice(i,1)
+//   isnottrue = true
+// }
+// if(isnottrue === false)
+// {
+//   console.log("Invalid")
+// }
+// for(i=0;i<empid.length;i++)
+// {
+//   empid[i].showdata()
+//   console.log("")
+// }
+
+//113. function()
+(function()
 {
-  if(empid[i].name === lak)
-    empid.splice(i,1)
-  isnottrue = true
-}
-if(isnottrue === false)
-{
-  console.log("Invalid")
-}
-for(i=0;i<empid.length;i++)
-{
-  empid[i].showdata()
-  console.log("")
-}
+    console.log("Hi amma and appa")
+})()
