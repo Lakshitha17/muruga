@@ -1462,7 +1462,29 @@ else {
 // }
 
 //113. function()
-(function()
+// (function()
+// {
+//     console.log("Hi amma and appa")
+// })()
+
+//114. Student Details
+
+class Student
 {
-    console.log("Hi amma and appa")
-})()
+    constructor(name, age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    display()
+    {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+    }
+}
+
+let s1 = new Student("Lakshitha", 20);
+
+s1.display();
+
