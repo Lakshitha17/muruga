@@ -1469,22 +1469,40 @@ else {
 
 //114. Student Details
 
-class Student
+// class Student
+// {
+//     constructor(name, age)
+//     {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     display()
+//     {
+//         console.log("Name: " + this.name);
+//         console.log("Age: " + this.age);
+//     }
+// }
+
+// let s1 = new Student("Lakshitha", 20);
+
+// s1.display();
+
+//115.Rectangle Area
+class Rectangle
 {
-    constructor(name, age)
+    constructor(length, breadth)
     {
-        this.name = name;
-        this.age = age;
+        this.length = length;
+        this.breadth = breadth;
     }
 
-    display()
+    area()
     {
-        console.log("Name: " + this.name);
-        console.log("Age: " + this.age);
+        console.log(this.length * this.breadth);
     }
 }
 
-let s1 = new Student("Lakshitha", 20);
+let r1 = new Rectangle(10, 5);
 
-s1.display();
-
+r1.area();
