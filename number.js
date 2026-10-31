@@ -1489,20 +1489,41 @@ else {
 // s1.display();
 
 //115.Rectangle Area
-class Rectangle
+// class Rectangle
+// {
+//     constructor(length, breadth)
+//     {
+//         this.length = length;
+//         this.breadth = breadth;
+//     }
+
+//     area()
+//     {
+//         console.log(this.length * this.breadth);
+//     }
+// }
+
+// let r1 = new Rectangle(10, 5);
+
+// r1.area();
+
+//116.Employee Salary
+class Employee
 {
-    constructor(length, breadth)
+    constructor(name, salary)
     {
-        this.length = length;
-        this.breadth = breadth;
+        this.name = name;
+        this.salary = salary;
     }
 
-    area()
+    display()
     {
-        console.log(this.length * this.breadth);
+        console.log(this.name + " earns " + this.salary);
     }
 }
 
-let r1 = new Rectangle(10, 5);
+let e1 = new Employee("Ravi", 20000);
+let e2 = new Employee("Priya", 30000);
 
-r1.area();
+e1.display();
+e2.display();
