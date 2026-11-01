@@ -1557,23 +1557,44 @@ else {
 // b1.display();
 
 //117.Find the Largest Number
-class NumberCheck
+// class NumberCheck
+// {
+//     constructor(a, b)
+//     {
+//         this.a = a;
+//         this.b = b;
+//     }
+
+//     largest()
+//     {
+//         if(this.a > this.b)
+//             console.log("Largest: " + this.a);
+//         else
+//             console.log("Largest: " + this.b);
+//     }
+// }
+
+// let n1 = new NumberCheck(25, 40);
+
+// n1.largest();
+
+//118.Check Even or Odd
+class Check
 {
-    constructor(a, b)
+    constructor(num)
     {
-        this.a = a;
-        this.b = b;
+        this.num = num;
     }
 
-    largest()
+    checkNumber()
     {
-        if(this.a > this.b)
-            console.log("Largest: " + this.a);
+        if(this.num % 2 == 0)
+            console.log("Even Number");
         else
-            console.log("Largest: " + this.b);
+            console.log("Odd Number");
     }
 }
 
-let n1 = new NumberCheck(25, 40);
+let c1 = new Check(7);
 
-n1.largest();
+c1.checkNumber();
