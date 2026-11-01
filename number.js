@@ -1508,22 +1508,50 @@ else {
 // r1.area();
 
 //116.Employee Salary
-class Employee
+// class Employee
+// {
+//     constructor(name, salary)
+//     {
+//         this.name = name;
+//         this.salary = salary;
+//     }
+
+//     display()
+//     {
+//         console.log(this.name + " earns " + this.salary);
+//     }
+// }
+// let e1 = new Employee("Ravi", 20000);
+// let e2 = new Employee("Priya", 30000);
+// e1.display();
+// e2.display();
+
+//116.Bank Account – Deposit and Withdraw
+class Bank
 {
-    constructor(name, salary)
+    constructor(balance)
     {
-        this.name = name;
-        this.salary = salary;
+        this.balance = balance;
+    }
+
+    deposit(amount)
+    {
+        this.balance = this.balance + amount;
+    }
+
+    withdraw(amount)
+    {
+        this.balance = this.balance - amount;
     }
 
     display()
     {
-        console.log(this.name + " earns " + this.salary);
+        console.log("Balance: " + this.balance);
     }
 }
 
-let e1 = new Employee("Ravi", 20000);
-let e2 = new Employee("Priya", 30000);
+let b1 = new Bank(1000);
 
-e1.display();
-e2.display();
+b1.deposit(500);
+b1.withdraw(200);
+b1.display();
