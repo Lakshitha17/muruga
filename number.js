@@ -1527,31 +1527,53 @@ else {
 // e2.display();
 
 //116.Bank Account – Deposit and Withdraw
-class Bank
+// class Bank
+// {
+//     constructor(balance)
+//     {
+//         this.balance = balance;
+//     }
+
+//     deposit(amount)
+//     {
+//         this.balance = this.balance + amount;
+//     }
+
+//     withdraw(amount)
+//     {
+//         this.balance = this.balance - amount;
+//     }
+
+//     display()
+//     {
+//         console.log("Balance: " + this.balance);
+//     }
+// }
+
+// let b1 = new Bank(1000);
+
+// b1.deposit(500);
+// b1.withdraw(200);
+// b1.display();
+
+//117.Find the Largest Number
+class NumberCheck
 {
-    constructor(balance)
+    constructor(a, b)
     {
-        this.balance = balance;
+        this.a = a;
+        this.b = b;
     }
 
-    deposit(amount)
+    largest()
     {
-        this.balance = this.balance + amount;
-    }
-
-    withdraw(amount)
-    {
-        this.balance = this.balance - amount;
-    }
-
-    display()
-    {
-        console.log("Balance: " + this.balance);
+        if(this.a > this.b)
+            console.log("Largest: " + this.a);
+        else
+            console.log("Largest: " + this.b);
     }
 }
 
-let b1 = new Bank(1000);
+let n1 = new NumberCheck(25, 40);
 
-b1.deposit(500);
-b1.withdraw(200);
-b1.display();
+n1.largest();
