@@ -1579,22 +1579,44 @@ else {
 // n1.largest();
 
 //118.Check Even or Odd
-class Check
+// class Check
+// {
+//     constructor(num)
+//     {
+//         this.num = num;
+//     }
+
+//     checkNumber()
+//     {
+//         if(this.num % 2 == 0)
+//             console.log("Even Number");
+//         else
+//             console.log("Odd Number");
+//     }
+// }
+
+// let c1 = new Check(7);
+
+// c1.checkNumber();
+
+//119.Employee Payroll List using Class and Object
+class Employee
 {
-    constructor(num)
+    constructor(name, salary)
     {
-        this.num = num;
+        this.name = name;
+        this.salary = salary;
     }
 
-    checkNumber()
+    display()
     {
-        if(this.num % 2 == 0)
-            console.log("Even Number");
-        else
-            console.log("Odd Number");
+        console.log("Employee Name: " + this.name);
+        console.log("Salary: " + this.salary);
     }
 }
 
-let c1 = new Check(7);
+let e1 = new Employee("Ravi", 25000);
+let e2 = new Employee("Priya", 30000);
 
-c1.checkNumber();
+e1.display();
+e2.display();
