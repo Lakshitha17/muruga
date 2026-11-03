@@ -1600,23 +1600,51 @@ else {
 // c1.checkNumber();
 
 //119.Employee Payroll List using Class and Object
-class Employee
+// class Employee
+// {
+//     constructor(name, salary)
+//     {
+//         this.name = name;
+//         this.salary = salary;
+//     }
+
+//     display()
+//     {
+//         console.log("Employee Name: " + this.name);
+//         console.log("Salary: " + this.salary);
+//     }
+// }
+
+// let e1 = new Employee("Ravi", 25000);
+// let e2 = new Employee("Priya", 30000);
+
+// e1.display();
+// e2.display();
+
+//120.Eligible to Vote using Class and Object
+class Voter
 {
-    constructor(name, salary)
+    constructor(name, age)
     {
         this.name = name;
-        this.salary = salary;
+        this.age = age;
     }
 
-    display()
+    check()
     {
-        console.log("Employee Name: " + this.name);
-        console.log("Salary: " + this.salary);
+        if (this.age >= 18)
+        {
+            console.log(this.name + " is eligible to vote");
+        }
+        else
+        {
+            console.log(this.name + " is not eligible to vote");
+        }
     }
 }
 
-let e1 = new Employee("Ravi", 25000);
-let e2 = new Employee("Priya", 30000);
+let v1 = new Voter("Ravi", 20);
+let v2 = new Voter("Priya", 16);
 
-e1.display();
-e2.display();
+v1.check();
+v2.check();
