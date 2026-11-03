@@ -1622,29 +1622,51 @@ else {
 // e2.display();
 
 //120.Eligible to Vote using Class and Object
-class Voter
+// class Voter
+// {
+//     constructor(name, age)
+//     {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     check()
+//     {
+//         if (this.age >= 18)
+//         {
+//             console.log(this.name + " is eligible to vote");
+//         }
+//         else
+//         {
+//             console.log(this.name + " is not eligible to vote");
+//         }
+//     }
+// }
+
+// let v1 = new Voter("Ravi", 20);
+// let v2 = new Voter("Priya", 16);
+
+// v1.check();
+// v2.check();
+
+//121.Constructor Demonstration in JavaScript
+class Student
 {
-    constructor(name, age)
+    constructor(name, mark)
     {
         this.name = name;
-        this.age = age;
+        this.mark = mark;
     }
 
-    check()
+    display()
     {
-        if (this.age >= 18)
-        {
-            console.log(this.name + " is eligible to vote");
-        }
-        else
-        {
-            console.log(this.name + " is not eligible to vote");
-        }
+        console.log("Student Name: " + this.name);
+        console.log("Mark: " + this.mark);
     }
 }
 
-let v1 = new Voter("Ravi", 20);
-let v2 = new Voter("Priya", 16);
+let s1 = new Student("Lakshmi", 90);
+let s2 = new Student("Ravi", 85);
 
-v1.check();
-v2.check();
+s1.display();
+s2.display();
