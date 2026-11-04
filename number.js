@@ -1642,31 +1642,37 @@ else {
 //         }
 //     }
 // }
-
 // let v1 = new Voter("Ravi", 20);
 // let v2 = new Voter("Priya", 16);
-
 // v1.check();
 // v2.check();
 
 //121.Constructor Demonstration in JavaScript
-class Student
+// class Student
+// {
+//     constructor(name, mark)
+//     {
+//         this.name = name;
+//         this.mark = mark;
+//     }
+
+//     display()
+//     {
+//         console.log("Student Name: " + this.name);
+//         console.log("Mark: " + this.mark);
+//     }
+// }
+// let s1 = new Student("Lakshmi", 90);
+// let s2 = new Student("Ravi", 85);
+// s1.display();
+// s2.display();
+
+//122.find the 2nd largest no in the array
+let arr = [1,4,2,5,6]
+for(let i=0;i<arr.length;i++)
 {
-    constructor(name, mark)
-    {
-        this.name = name;
-        this.mark = mark;
-    }
-
-    display()
-    {
-        console.log("Student Name: " + this.name);
-        console.log("Mark: " + this.mark);
-    }
+  if(arr[i]==5)
+  {
+    console.log(arr[i])
+  }
 }
-
-let s1 = new Student("Lakshmi", 90);
-let s2 = new Student("Ravi", 85);
-
-s1.display();
-s2.display();
