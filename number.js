@@ -1678,20 +1678,45 @@ else {
 // }
 
 //123.Largest and Smallest Number
-let arr = [12, 5, 30, 2, 18];
+// let arr = [12, 5, 30, 2, 18];
+// let largest = arr[0];
+// let smallest = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//         largest = arr[i];
+//     }
 
-let largest = arr[0];
-let smallest = arr[0];
+//     if (arr[i] < smallest) {
+//         smallest = arr[i];
+//     }
+// }
+// console.log("Largest:", largest);
+// console.log("Smallest:", smallest);
 
-for (let i = 1; i < arr.length; i++) {
+//124.Third Largest Distinct Number
+let arr = [10, 20, 5, 30, 20, 40];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+let thirdLargest = -Infinity;
+
+for (let i = 0; i < arr.length; i++) {
+
     if (arr[i] > largest) {
+        thirdLargest = secondLargest;
+        secondLargest = largest;
         largest = arr[i];
     }
 
-    if (arr[i] < smallest) {
-        smallest = arr[i];
+    else if (arr[i] > secondLargest && arr[i] < largest) {
+        thirdLargest = secondLargest;
+        secondLargest = arr[i];
+    }
+
+    else if (arr[i] > thirdLargest &&
+             arr[i] < secondLargest) {
+        thirdLargest = arr[i];
     }
 }
 
-console.log("Largest:", largest);
-console.log("Smallest:", smallest);
+console.log("Third Largest:", thirdLargest);
