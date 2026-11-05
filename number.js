@@ -1719,22 +1719,35 @@ else {
 // console.log("Third Largest:", thirdLargest);
 
 //125.Second Smallest Distinct Number
-let arr = [8, 3, 1, 6, 2];
+// let arr = [8, 3, 1, 6, 2];
 
-let smallest = Infinity;
-let secondSmallest = Infinity;
+// let smallest = Infinity;
+// let secondSmallest = Infinity;
 
-for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 
-    if (arr[i] < smallest) {
-        secondSmallest = smallest;
-        smallest = arr[i];
+//     if (arr[i] < smallest) {
+//         secondSmallest = smallest;
+//         smallest = arr[i];
+//     }
+
+//     else if (arr[i] < secondSmallest &&
+//              arr[i] > smallest) {
+//         secondSmallest = arr[i];
+//     }
+// }
+// console.log("Second Smallest:", secondSmallest);
+
+//126.square pattern
+let n = 4;
+
+for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    for (let j = 1; j <= n; j++) {
+        row += "* ";
     }
 
-    else if (arr[i] < secondSmallest &&
-             arr[i] > smallest) {
-        secondSmallest = arr[i];
-    }
+    console.log(row);
 }
 
-console.log("Second Smallest:", secondSmallest);
