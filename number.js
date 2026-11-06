@@ -1794,15 +1794,32 @@ else {
 // }
 
 //130.inverted no triangle
-let n = 5;
+// let n = 5;
 
-for(let i = 0; i < n; i++)
+// for(let i = 0; i < n; i++)
+// {
+//     let row = "";
+
+//     for(let j = 1; j <= n-i; j++)
+//     {
+//         row += j + " ";
+//     }
+
+//     console.log(row);
+// }
+
+//131.Floyd's Triangle
+let n = 5;
+let num = 1;
+
+for(let i = 1; i <= n; i++)
 {
     let row = "";
 
-    for(let j = 1; j <= n-i; j++)
+    for(let j = 1; j <= i; j++)
     {
-        row += j + " ";
+        row += num + " ";
+        num++;
     }
 
     console.log(row);
