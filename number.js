@@ -1855,24 +1855,46 @@ else {
 // }
 
 //133.hallow diamond pattern
+// let n = 5;
+
+// for (let i = 1; i <= 2 * n - 1; i++) {
+
+//     let row = "";
+//     let level = i <= n ? i : 2 * n - i;
+
+//     for (let j = 1; j <= n - level; j++) {
+//         row += " ";
+//     }
+
+//     for (let j = 1; j <= 2 * level - 1; j++) {
+
+//         if (j === 1 || j === 2 * level - 1) {
+//             row += "*";
+//         } else {
+//             row += " ";
+//         }
+//     }
+
+//     console.log(row);
+// }
+
+//134.palindromic numbre pyramid
 let n = 5;
 
-for (let i = 1; i <= 2 * n - 1; i++) {
+for (let i = 1; i <= n; i++) {
 
     let row = "";
-    let level = i <= n ? i : 2 * n - i;
 
-    for (let j = 1; j <= n - level; j++) {
+    for (let j = 1; j <= n - i; j++) {
         row += " ";
     }
 
-    for (let j = 1; j <= 2 * level - 1; j++) {
+    for (let j = i; j >= 1; j--) {
+        row += j;
+    }
 
-        if (j === 1 || j === 2 * level - 1) {
-            row += "*";
-        } else {
-            row += " ";
-        }
+    for (let j = 2; j <= i; j++) {
+        row += j;
     }
 
     console.log(row);
