@@ -1826,39 +1826,53 @@ else {
 // }
 
 //132.butterfly pattern
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+//     for (let j = 1; j <= 2 * (n - i); j++) {
+//         row += " ";
+//     }
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+//     console.log(row);
+// }
+// for (let i = n - 1; i >= 1; i--) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+//     for (let j = 1; j <= 2 * (n - i); j++) {
+//         row += " ";
+//     }
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+//     console.log(row);
+// }
+
+//133.hallow diamond pattern
 let n = 5;
 
-for (let i = 1; i <= n; i++) {
+for (let i = 1; i <= 2 * n - 1; i++) {
+
     let row = "";
+    let level = i <= n ? i : 2 * n - i;
 
-    for (let j = 1; j <= i; j++) {
-        row += "*";
-    }
-
-    for (let j = 1; j <= 2 * (n - i); j++) {
+    for (let j = 1; j <= n - level; j++) {
         row += " ";
     }
 
-    for (let j = 1; j <= i; j++) {
-        row += "*";
-    }
+    for (let j = 1; j <= 2 * level - 1; j++) {
 
-    console.log(row);
-}
-
-for (let i = n - 1; i >= 1; i--) {
-    let row = "";
-
-    for (let j = 1; j <= i; j++) {
-        row += "*";
-    }
-
-    for (let j = 1; j <= 2 * (n - i); j++) {
-        row += " ";
-    }
-
-    for (let j = 1; j <= i; j++) {
-        row += "*";
+        if (j === 1 || j === 2 * level - 1) {
+            row += "*";
+        } else {
+            row += " ";
+        }
     }
 
     console.log(row);
