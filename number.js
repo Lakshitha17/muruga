@@ -33,7 +33,7 @@
 // else{
 //     console.log("not a vowel");
 // }
-
+console.log("My GitHub practice");
 // 5.Even number
 // let num1 = 20;
 // if(num1%2==0)
