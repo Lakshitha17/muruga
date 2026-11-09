@@ -1809,17 +1809,56 @@ else {
 // }
 
 //131.Floyd's Triangle
-let n = 5;
-let num = 1;
+// let n = 5;
+// let num = 1;
 
-for(let i = 1; i <= n; i++)
-{
+// for(let i = 1; i <= n; i++)
+// {
+//     let row = "";
+
+//     for(let j = 1; j <= i; j++)
+//     {
+//         row += num + " ";
+//         num++;
+//     }
+
+//     console.log(row);
+// }
+
+//132.butterfly pattern
+let n = 5;
+
+for (let i = 1; i <= n; i++) {
     let row = "";
 
-    for(let j = 1; j <= i; j++)
-    {
-        row += num + " ";
-        num++;
+    for (let j = 1; j <= i; j++) {
+        row += "*";
+    }
+
+    for (let j = 1; j <= 2 * (n - i); j++) {
+        row += " ";
+    }
+
+    for (let j = 1; j <= i; j++) {
+        row += "*";
+    }
+
+    console.log(row);
+}
+
+for (let i = n - 1; i >= 1; i--) {
+    let row = "";
+
+    for (let j = 1; j <= i; j++) {
+        row += "*";
+    }
+
+    for (let j = 1; j <= 2 * (n - i); j++) {
+        row += " ";
+    }
+
+    for (let j = 1; j <= i; j++) {
+        row += "*";
     }
 
     console.log(row);
