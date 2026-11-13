@@ -1935,17 +1935,27 @@ else {
 // }
 
 //137.right aligned triangle
-let n = 5;
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
 
-for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n - i; j++) {
+//         row += " ";
+//     }
+
+//     for (let k = 1; k <= i; k++) {
+//         row += "*";
+//     }
+
+//     console.log(row);
+// }
+
+//138.Increasing Star Pattern
+for (let i = 1; i <= 5; i++) {
     let row = "";
 
-    for (let j = 1; j <= n - i; j++) {
-        row += " ";
-    }
-
-    for (let k = 1; k <= i; k++) {
-        row += "*";
+    for (let j = 1; j <= i; j++) {
+        row += "* ";
     }
 
     console.log(row);
