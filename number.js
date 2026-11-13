@@ -1951,7 +1951,18 @@ else {
 // }
 
 //138.Increasing Star Pattern
-for (let i = 1; i <= 5; i++) {
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= i; j++) {
+//         row += "* ";
+//     }
+
+//     console.log(row);
+// }
+
+//139.Decreasing Star Pattern
+for (let i = 5; i >= 1; i--) {
     let row = "";
 
     for (let j = 1; j <= i; j++) {
