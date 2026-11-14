@@ -1984,7 +1984,6 @@ else {
 // }
 
 //141.Alphabet Triangle
-
 for (let i = 1; i <= 5; i++) {
     let pattern = "";
 
@@ -1994,4 +1993,17 @@ for (let i = 1; i <= 5; i++) {
 
     console.log(pattern);
 }
+
+//142.Inverted Number Triangle
+
+for (let i = 5; i >= 1; i--) {
+    let pattern = "";
+
+    for (let j = 1; j <= i; j++) {
+        pattern += j + " ";
+    }
+
+    console.log(pattern);
+}
+
 
