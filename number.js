@@ -1973,12 +1973,25 @@ else {
 // }
 
 //140.Square Pattern
-for (let i = 1; i <= 5; i++) {
-    let row = "";
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
 
-    for (let j = 1; j <= 5; j++) {
-        row += "* ";
+//     for (let j = 1; j <= 5; j++) {
+//         row += "* ";
+//     }
+
+//     console.log(row);
+// }
+
+//141.Alphabet Triangle
+
+for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+
+    for (let j = 0; j < i; j++) {
+        pattern += String.fromCharCode(65 + j) + " ";
     }
 
-    console.log(row);
+    console.log(pattern);
 }
+
