@@ -1995,12 +1995,27 @@ for (let i = 1; i <= 5; i++) {
 }
 
 //142.Inverted Number Triangle
+// for (let i = 5; i >= 1; i--) {
+//     let pattern = "";
 
-for (let i = 5; i >= 1; i--) {
+//     for (let j = 1; j <= i; j++) {
+//         pattern += j + " ";
+//     }
+
+//     console.log(pattern);
+// }
+
+//144.Hollow Square Pattern
+
+for (let i = 1; i <= 5; i++) {
     let pattern = "";
 
-    for (let j = 1; j <= i; j++) {
-        pattern += j + " ";
+    for (let j = 1; j <= 5; j++) {
+        if (i == 1 || i == 5 || j == 1 || j == 5) {
+            pattern += "* ";
+        } else {
+            pattern += "  ";
+        }
     }
 
     console.log(pattern);
