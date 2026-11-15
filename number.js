@@ -2006,18 +2006,41 @@ for (let i = 1; i <= 5; i++) {
 // }
 
 //144.Hollow Square Pattern
-for (let i = 1; i <= 5; i++) {
-    let pattern = "";
+// for (let i = 1; i <= 5; i++) {
+//     let pattern = "";
 
-    for (let j = 1; j <= 5; j++) {
-        if (i == 1 || i == 5 || j == 1 || j == 5) {
-            pattern += "* ";
+//     for (let j = 1; j <= 5; j++) {
+//         if (i == 1 || i == 5 || j == 1 || j == 5) {
+//             pattern += "* ";
+//         } else {
+//             pattern += "  ";
+//         }
+//     }
+
+//     console.log(pattern);
+// }
+
+//145.Hollow Pyramid
+
+let n = 5;
+
+for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    for (let j = 1; j <= n - i; j++) {
+        row += " ";
+    }
+
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        if (k === 1 || k === 2 * i - 1 || i === n) {
+            row += "*";
         } else {
-            pattern += "  ";
+            row += " ";
         }
     }
 
-    console.log(pattern);
+    console.log(row);
 }
+
 
 
