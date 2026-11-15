@@ -2006,7 +2006,6 @@ for (let i = 1; i <= 5; i++) {
 // }
 
 //144.Hollow Square Pattern
-
 for (let i = 1; i <= 5; i++) {
     let pattern = "";
 
