@@ -2021,40 +2021,40 @@ for (let i = 1; i <= 5; i++) {
 // }
 
 //145.Hollow Pyramid
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//     let row = "";
-
-//     for (let j = 1; j <= n - i; j++) {
-//         row += " ";
-//     }
-
-//     for (let k = 1; k <= 2 * i - 1; k++) {
-//         if (k === 1 || k === 2 * i - 1 || i === n) {
-//             row += "*";
-//         } else {
-//             row += " ";
-//         }
-//     }
-
-//     console.log(row);
-// }
-
-// 146.X Pattern
 let n = 5;
 for (let i = 1; i <= n; i++) {
     let row = "";
 
-    for (let j = 1; j <= n; j++) {
-        if (i === j || i + j === n + 1) {
-            row += "* ";
+    for (let j = 1; j <= n - i; j++) {
+        row += " ";
+    }
+
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        if (k === 1 || k === 2 * i - 1 || i === n) {
+            row += "*";
         } else {
-            row += "  ";
+            row += " ";
         }
     }
 
     console.log(row);
 }
+
+// 146.X Pattern
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= n; j++) {
+//         if (i === j || i + j === n + 1) {
+//             row += "* ";
+//         } else {
+//             row += "  ";
+//         }
+//     }
+
+//     console.log(row);
+// }
 
 // 147.Right-Aligned Number Triangle
 // let n = 5;
