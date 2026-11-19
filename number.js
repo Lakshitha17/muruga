@@ -2056,10 +2056,8 @@ for (let i = 1; i <= 5; i++) {
 //     console.log(row);
 // }
 
-//147.Right-Aligned Number Triangle
-
+147.Right-Aligned Number Triangle
 let n = 5;
-
 for (let i = 1; i <= n; i++) {
     let row = "";
 
