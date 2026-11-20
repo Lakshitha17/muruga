@@ -2029,16 +2029,16 @@ for (let i = 1; i <= n; i++) {
         row += " ";
     }
 
-//     for (let k = 1; k <= 2 * i - 1; k++) {
-//         if (k === 1 || k === 2 * i - 1 || i === n) {
-//             row += "*";
-//         } else {
-//             row += " ";
-//         }
-//     }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        if (k === 1 || k === 2 * i - 1 || i === n) {
+            row += "*";
+        } else {
+            row += " ";
+        }
+    }
 
-//     console.log(row);
-// }
+    console.log(row);
+}
 
 // 146.X Pattern
 // let n = 5;
